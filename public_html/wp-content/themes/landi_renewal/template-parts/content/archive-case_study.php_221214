@@ -1,0 +1,74 @@
+<?php
+	$template_pass = get_template_pass();
+	global $max_num_pages_global;
+?>
+<div id="wrap">
+
+	<div class="ttl_subpage_02 animation">
+		<h1>
+			<em>CASE STUDY</em>
+			<span>ランディPRO導入店の活用事例をご紹介します。</span>
+		</h1>
+	</div>
+
+	<article class="archive case_study">
+		<ul class="Breadcrumb">
+			<li><a href="<?= esc_url(home_url("/")); ?>">ホーム</a></li>
+			<li><a href="<?= esc_url(home_url("/")); ?>landi">ランディ</a></li>
+			<li>導入事例一覧</li>
+		</ul>
+
+		<section class="animation">
+
+			<div class="flex">
+				<?php
+
+					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					$args   = array(
+							'posts_per_page' => 12, 	// 表示する件数
+							'orderby' => 'date', // 更新日でソート
+							'order' => 'ASC', 	// DESCで最新から表示、ASCで最古から表示
+							'post_type' => 'case_study', 	// 特定のカテゴリースラッグを指定
+							'post_status' => 'publish',
+							'paged' => $paged 	// ページ設定
+					);
+
+					$query = new WP_Query($args);
+					// max_num_pagesを取得
+					$max_num_pages_global = $query->max_num_pages;
+
+					if ($query->have_posts()) :
+						foreach ($query->posts as $post) :
+
+							//カスタムフィールド値
+							$position = get_field('case_position');
+							$img = get_field('case_image');
+							$company = get_field('case_position');
+				?>
+
+					<a href="<?php the_permalink(); ?>" class="item">
+						<div class="inner">
+							<div class="txt">
+								<p class="content_ttl">導入事例</p>
+								<p class="num"><?php the_title(); ?></p>
+							</div>
+							<img src="<?php if($position){ echo $img; } ?>" alt="<?php if($company){ echo $company; } ?><?php if($position){ echo $position; } ?>">
+						</div>
+						<?php if($company){ ?>
+							<p><?= $company; ?></p>
+						<?php } ?>
+					</a>
+
+
+				<?php 
+					endforeach; wp_reset_postdata();
+					endif; 
+				?>
+				
+			</div>
+
+		</section>
+
+	</article>
+
+</div><!-- wrap -->

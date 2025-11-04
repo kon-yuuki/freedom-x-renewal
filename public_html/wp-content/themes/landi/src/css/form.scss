@@ -1,0 +1,403 @@
+@charset "utf-8";
+@import "function";
+
+$input:40px;
+$input_sp:40px;
+$checkbox:28px;
+$radius:3px;
+$inputbg:#fff;
+
+
+:placeholder-shown {
+    color: $gray;
+}
+
+/*******************************************
+    
+PC SP form
+
+*******************************************/
+@media screen and (max-width:740px){
+    $input:40px;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+        width: 100%;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+        width: 100%;
+        padding: 0 6px;
+        height: $input;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        -webkit-appearance:none;
+        border:$border solid 1px;
+        border-radius: $radius;
+        background: $inputbg;
+        
+        &.narrow{
+            width: 20%;
+        }
+        &.middle{
+            width: 40%;
+        }
+        &.wide{
+            width: 60%;
+        }
+        
+        &:focus{
+            background: #fff;
+        }
+}
+
+textarea{
+    -webkit-appearance: none;
+    -webkit-border-radius : 0;
+    width: 100%;
+    height: 140px;
+    padding: 6px;
+    box-sizing: border-box;
+    border: $border solid 1px;
+    font-size: 1.6rem;
+    border-radius: $radius;
+    background: $inputbg;
+}
+
+
+.selectBox{
+    display:block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+
+    select {
+    	-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+        border: medium none;
+        border-radius:0px;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        height: $input;
+        margin: 0;
+        padding: 0 6px;
+        box-sizing: border-box;
+        background: #fff;
+        border:$border solid 1px;
+        padding-right: 50px;
+        color: $black;
+        width: 125%;
+        max-width: none;
+        box-shadow:none;
+        border-radius: $radius;
+        background: $inputbg;
+
+
+        option,optgroup{
+            color: $black;
+            font-style: normal;
+        }
+    }
+
+    &:before{
+        content: "";
+        width: 1px;
+        height: $input;
+        position: absolute;
+        right: $input;
+        top: 0px;
+        background:$border;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &:after {
+        background: #fff;
+        color: $black;
+        content: "▼";
+        font-size: 1rem;
+        height: 100%;
+        line-height: $input;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        width: $input;
+        box-sizing: border-box;
+        border:$border solid 1px;
+        border-left: 0;
+        display: inline-block;
+    }
+}//selectBox
+
+.checkBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .check{
+        
+        input[type="checkbox"]{
+            display: none;
+        }
+        
+        input[type="checkbox"]:checked ~ label{
+            color: $black;
+    
+            &:after{
+                width: 0px;
+                left: calc(#{$checkbox} - 2px);
+            }
+        }
+        
+        label{
+            display: block;
+            width: 100%;
+            padding-left: $input;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+            color: $black;
+            font-size: 1.6rem;
+            line-height: 1;
+            
+            &:before{
+                display: inline-block;
+                content: "";
+                width: $checkbox;
+                height: $checkbox;
+                border: $border solid 1px;
+                position: relative;
+                box-sizing: border-box;
+                border-radius: $radius;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                background: #fff;
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                width: calc( #{$checkbox} - 2px);
+                height: calc( #{$checkbox} - 2px);
+                background: #fff;
+                border-radius: $radius;
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                transition: all 0.2s ease;
+                backface-visibility: hidden;
+                z-index: 10;
+            }
+        
+            
+            span{
+                display: inline-block;
+                line-height:$checkbox ;
+                
+                &:before{
+                    content: "\e906";
+                    font-family: $icomoon;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                    width: calc( #{$checkbox} - 2px);
+                    height: calc( #{$checkbox} - 2px);
+                    text-align: center;
+                    line-height:calc( #{$checkbox} - 2px);
+                    color: $green;
+                    
+                }
+               
+        
+            }
+        }
+        
+    }//check
+    
+
+    
+}//checkBox
+
+.radioBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &.vertical{
+        display: block;
+        text-align: left;
+        
+        .radio + .radio{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        
+    }
+    
+    .radio{
+        
+        input[type="radio"]{
+            display: none;
+        }
+        
+        input[type="radio"]:checked ~ label{
+            color: $black;
+            &:before{
+                background: #fff;
+            }
+            span:before{
+                background: $green;
+            }
+        }
+        
+        label{
+            display: block;
+            width: 100%;
+            padding-left: $input;
+            box-sizing: border-box;
+            position: relative;
+            cursor: pointer;
+            color: $black;
+            font-size: 1.6rem;
+            line-height: 1;
+            
+            &:before{
+                display: inline-block;
+                content: "";
+                width: $checkbox;
+                height: $checkbox;
+                border: $border solid 1px;
+                border-radius: 50%;
+                position: relative;
+                top: 1px;
+                box-sizing: border-box;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                background: $inputbg;
+            }
+            
+            span{
+                display: inline-block;
+                line-height:$checkbox ;
+                
+                &:before{
+                    display: inline-block;
+                    content: "";
+                    width: calc(#{$checkbox} - 14px);
+                    height: calc(#{$checkbox} - 14px);
+                    border-radius: 50%;
+                    position: relative;
+                    top: 1px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    left: 7px;
+                    top: 7px;
+                    background: $inputbg;
+                    
+                    transition: all 0.2s ease;
+                    backface-visibility: hidden;
+                    
+                }
+               
+        
+            }
+        }
+        
+        
+    }//radio
+    
+    .radio + .radio{
+        margin-left: 20px;
+    }
+}//radioBox
+
+
+.submit{
+    input[type="submit"]{
+        margin: 0 auto;
+        
+        &:hover{
+            background: $green;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+                    
+                    
+@media screen and (max-width:740px){
+    
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+        width: 100% !important;
+        height: $input_sp;
+        
+        &.narrow{
+          width: 30% !important;  
+        }
+    }
+    .radioBox .radio,
+    .checkBox .check{
+        
+        label{
+        padding-left: 40px;
+            span{
+            font-size: 1.4rem;
+            }
+        }
+    }
+.selectBox{
+    select {
+        height: $input_sp;
+
+    }
+
+    &:before{
+        height: $input_sp;
+        right: $input_sp;
+    }
+    &:after {
+        line-height: $input_sp;
+        width: $input_sp;
+    }
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<?php 
+$template_pass = get_template_pass();
+global $max_num_pages_global;
+
+// タクソノミーの情報を取得
+$queried_object = get_queried_object();
+
+// スラッグを取得
+$slug = $queried_object->slug;
+
+$termname = $queried_object->name;
+
+?>
+<div id="wrap">
+
+	<div class="ttl_subpage_02 animation">
+		<h1>
+			<em>NEWS</em>
+			<span>ニュース</span>
+		</h1>
+	</div>
+
+<article>
+	<ul class="Breadcrumb">
+			<li><a href="<?php echo esc_url(home_url("/")); ?>">ランディ</a></li>
+			<li><a href="<?php echo esc_url(home_url("/news")); ?>">ニュース</a></li>
+			<li><?= $termname; ?></li>
+		</ul>
+
+    <section class="animation">
+		<div class="news_category">
+			<span class="toggle">CATEGORY</span>
+
+			<ul class="category_list">
+		        <li><a href="<?php echo esc_url(home_url("/news")); ?>">ALL</a></li>
+		        <li><a href="<?php echo esc_url(home_url("/news/pressrelease")); ?>"<?php if($slug === "pressrelease"): echo 'class="current"'; endif; ?>>PRESS RELEASE</a></li>
+		        <li><a href="<?php echo esc_url(home_url("/news/media")); ?>"<?php if($slug === "media"): echo 'class="current"'; endif; ?>>MEDIA</a></li>
+		        <li><a href="<?php echo esc_url(home_url("/news/seminar")); ?>"<?php if($slug === "seminar"): echo 'class="current"'; endif; ?>>SEMINAR</a></li>
+		        <li><a href="<?php echo esc_url(home_url("/news/information")); ?>"<?php if($slug === "information"): echo 'class="current"'; endif; ?>>INFORMATION</a></li>
+		    </ul>
+			</div>
+			
+		<div class="news topMargin">
+		<?php
+
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$args   = array(
+				'posts_per_page' => 10, 	// 表示する件数
+				'orderby' => 'date', // 更新日でソート
+				'order' => 'DESC', 	// DESCで最新から表示、ASCで最古から表示
+				'post_type' => 'news', 	// 特定のカテゴリースラッグを指定
+				'post_status' => 'publish',
+				'tax_query' => [
+					[
+						'taxonomy' => $queried_object->taxonomy,
+						'field' => 'slug',
+						'terms' =>  $queried_object->slug,
+					],
+				],
+				'paged' => $paged 	// ページ設定
+		);
+
+		$query = new WP_Query($args);
+		// max_num_pagesを取得
+		$max_num_pages_global = $query->max_num_pages;
+
+		if ($query->have_posts()) :
+				foreach ($query->posts as $post) :
+				
+				// カスタムフィールドの情報を取得
+				$post_meta = get_post_custom();
+				$news_text = $post_meta["news_text"][0] ?? null;
+			
+				// タームの取得
+				$terms = get_the_terms($post->ID, 'taxonomy_news');
+		?>
+		    <div class="item">
+			    <a href="<?php echo get_permalink($post->ID);?>"></a>
+					<em class="time"><?php the_time('Y.m.d') ?></em>
+					<span class="tag"><?= $terms[0]->name; ?></span>
+				<div class="text">
+			    	<h3><?php the_title(); ?></h3>
+			    	<!-- <p><?php // echo mb_strimlen($news_text,0,54,"..."); ?></p> -->
+			    </div>
+		    </div>
+				<?php endforeach; wp_reset_postdata(); ?>
+					<?php endif; ?>
+	    </div>
+
+			<?php get_template_part($template_pass."/pagination"); ?>
+    </section>
+
+
+</article>
+
+</div><!-- wrap -->
+
+
+

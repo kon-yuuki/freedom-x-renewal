@@ -1,0 +1,701 @@
+@use "../../_foundation/global" as g;
+
+.p-casestudy-fv__pickup {
+  padding-top: 2rem;
+  position: relative;
+  border-top: 1px solid g.$c-gray__2;
+  margin-bottom: 10rem;
+
+  .js-casestudy-pickup-slider {
+    margin-bottom: 3rem;
+    &.is-ready {
+      .c-card {
+        transition: scale g.$duration g.$easing-out;
+      }
+    }
+    .splide__track {
+      padding-top: 1rem;
+    }
+    .splide__slide {
+      .c-card {
+        scale: 0.8;
+      }
+
+      &.is-active {
+        .c-card {
+          scale: 1;
+        }
+      }
+      &:not(.is-active) {
+        pointer-events: none;
+      }
+    }
+    .img-ov {
+      border-radius: 20px;
+    }
+    .splide__list {
+      align-items: center;
+    }
+  }
+
+  .c-card-body {
+    position: relative;
+
+    &:before {
+      content: "";
+      inset: 0;
+      position: absolute;
+      pointer-events: none;
+      background-image: linear-gradient(to bottom, transparent 27%, black 76%);
+      border-radius: 20px;
+      opacity: 0.6;
+      z-index: 1;
+    }
+  }
+  .slider-module {
+    position: absolute;
+    top: 0;
+  }
+
+  .c-cat-list,
+  .c-tag-list {
+    font-size: 1.4rem;
+  }
+
+  .c-nextBtn-dummy,
+  .c-prevBtn-dummy {
+    position: absolute;
+    height: 100%;
+    width: calc((100vw - 56.8%) / 2);
+    top: 0;
+    transform: scaleY(0.8);
+  }
+  .c-prevBtn-dummy {
+    left: 0;
+    translate: -5rem 0;
+  }
+  .c-nextBtn-dummy {
+    right: 0;
+    translate: 5rem 0;
+  }
+
+  .splide__track {
+    overflow: visible;
+    position: relative;
+  }
+
+  .js-casestudy-pickup-slider-thumbnail {
+    .img-ov {
+      border-radius: 10px;
+    }
+    .splide__slide {
+      scale: 1;
+      opacity: 0.6;
+      transition: opacity g.$duration g.$easing-out;
+      border-radius: 10px;
+
+      &.is-active {
+        opacity: 1;
+        .img-ov {
+          border: 1px solid g.$c-green;
+        }
+      }
+    }
+    .splide__list {
+      justify-content: center;
+    }
+  }
+}
+.p-casestudy-fv__pickup--ttl {
+  font-size: 1rem;
+  font-family: g.$font-bold;
+}
+
+.p-casestudy-slider-control {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+
+  .c-slider__control {
+    padding-right: 0;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+
+  .c-slider-arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .splide__pagination {
+    gap: 0.7rem;
+  }
+  .splide__pagination__page {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+
+    &.is-active {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.p-casestudy-fv__pickup__detail {
+  position: absolute;
+  bottom: 4rem;
+  padding-inline: 4.3rem;
+  color: white;
+  z-index: 1;
+}
+
+.p-casestudy-fv__pickup__client {
+  font-size: 1.4rem;
+  font-family: g.$font-bold;
+  margin-bottom: 1rem;
+}
+.p-casestudy-fv__ttl {
+  font-size: 3rem;
+  font-family: g.$font-bold;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.p-casestudy-fv__pickup__aside {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .c-tag-list {
+    color: white;
+    opacity: 0.7;
+  }
+}
+
+.p-casestudy-list__inner {
+  row-gap: 7rem;
+  .p-top-casestudy__client {
+    margin-bottom: 0.7rem;
+  }
+
+  .p-top-casestudy__ttl {
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+  }
+
+  .c-cat-list {
+    margin-bottom: 1.5rem;
+  }
+
+  .c-tag-list {
+    margin-bottom: 1.2rem;
+  }
+  .img-ov {
+    border-radius: 20px;
+  }
+
+  .p-top-casestudy__latest--inner {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-inline: 3rem;
+
+    &:before {
+      inset: -2rem 0 -2rem;
+    }
+  }
+  .p-top-casestudy__latest--item {
+    padding: 0;
+    border-left: 1px solid rgba(black, 0.1);
+    transition: border-color g.$duration g.$easing-out;
+
+    &:after {
+      display: none !important;
+    }
+
+    &:has(.hover) {
+      border-color: transparent;
+
+      & + .p-top-casestudy__latest--item {
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+//詳細ページ
+.casestudy {
+  .c-mainGrid {
+    padding-top: 2.6rem;
+  }
+  .c-content {
+    padding-right: 0;
+  }
+}
+
+.p-top-casestudy__theme {
+  position: relative;
+  padding-top: 1.5rem;
+  margin-bottom: 1.6rem;
+  @include g.dotted-line-top($opacity: 0.1);
+}
+.p-top-casestudy__theme-label {
+  font-size: 1rem;
+  font-family: g.$font-bold;
+  margin-bottom: 0.6rem;
+}
+.p-top-casestudy__theme-content {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.p-casestudy-fv__slider {
+  margin-bottom: 7.4rem;
+  pointer-events: none;
+  .splide__slide {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.p-casestudy-single-intro {
+  border-radius: 20px 0 0 0;
+  border-top: 1px solid rgba(black, 0.1);
+  border-left: 1px solid rgba(black, 0.1);
+  padding: 6rem;
+  margin-bottom: 11rem;
+}
+
+.p-casestudy-single-intro__item {
+  display: flex;
+  gap: 2rem;
+
+  p.p-casestudy-single-intro__ttl,
+  h2.p-casestudy-single-intro__ttl {
+    font-size: 1.8rem;
+    font-family: g.$font-bold;
+  }
+
+  p.p-casestudy-single-intro__staff {
+    font-size: 1rem;
+    opacity: 0.5;
+    margin-top: -1.5rem;
+  }
+}
+
+.p-casestudy-single-intro__heading {
+  width: 21.5rem;
+}
+.p-casestudy-single-intro__detail {
+  font-size: 1.4rem;
+}
+
+.p-casestudy-single-intro__item {
+  position: relative;
+  &:not(:first-child) {
+    padding-top: 2.6rem;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+    @include g.dotted-line-bottom;
+  }
+}
+
+.p-casestudy-single-intro__staff {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.p-casestudy-single-intro__staff__detail {
+  translate: 0 -0.5rem;
+}
+
+.p-casestudy-single-intro__staff__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 7rem;
+  aspect-ratio: 1/1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#casestudy {
+  p.p-casestudy-single-intro__staff__post {
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .p-casestudy-single-intro__staff__name {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .p-news-related {
+    .splide__track {
+      overflow: visible;
+      position: relative;
+    }
+    .c-case_study-list--item {
+      padding-bottom: 0;
+    }
+    .slider-modules {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .c-nextBtn-dummy,
+    .c-prevBtn-dummy {
+      height: 100%;
+      position: absolute;
+      pointer-events: all;
+      top: 0;
+      width: calc(100vw - 100% - 4rem);
+    }
+    .c-prevBtn-dummy {
+      left: 0;
+      translate: calc(-100% - 4rem) 0;
+    }
+    .c-nextBtn-dummy {
+      right: 0;
+      translate: calc(100% + 4rem) 0;
+    }
+    .splide__arrows {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.p-casestudy-single__fv__client {
+  font-family: g.$font-bold;
+  color: g.$c-green__light;
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+  position: relative;
+
+  &:before {
+    content: "";
+    height: 1.3rem;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    background-color: g.$c-gray__1;
+  }
+}
+
+.c-case_study-list {
+  .img-ov {
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+  .c-case_study-list__client {
+    font-size: 1.2rem;
+    font-family: g.$font-bold;
+    color: g.$c-green__light;
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .c-case_study-list--ttl {
+    font-size: 1.6rem;
+    font-family: g.$font-bold;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+  .c-case_study-list__detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .c-tag-list {
+      translate: 0 0.1rem;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .casestudy {
+    &:not(.single-case_study) {
+      .c-content {
+        padding-right: 1.5rem;
+        padding-top: 0.3rem;
+        border-top: 1px solid g.$c-gray__2;
+      }
+    }
+    &.single-case_study {
+      .c-mainGrid {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .p-casestudy-list__inner {
+    row-gap: 0;
+    .p-top-casestudy__latest--inner {
+      padding-inline: 0;
+      padding: 2rem 0 1.9rem;
+      height: auto;
+      &:before {
+        display: none;
+      }
+    }
+    .p-top-casestudy__latest--item {
+      border: none;
+    }
+    .p-top-casestudy__client {
+      margin-bottom: 0.5rem;
+    }
+    .p-top-casestudy__ttl {
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+    .c-cat-list {
+      margin-bottom: 1rem;
+    }
+    .c-tag-list {
+      margin-bottom: 0;
+    }
+    .img-ov {
+      border-radius: 10px;
+    }
+  }
+
+  .p-casestudy-nav {
+    margin-bottom: 6rem;
+    display: block;
+    .c-news-nav__cat-list {
+      margin-bottom: 2rem;
+    }
+    .c-tag-list {
+      font-size: 1.2rem;
+      margin-top: 1.3rem;
+    }
+  }
+
+  .p-casestudy-nav__ttl {
+    font-size: 1rem;
+    font-family: g.$font-bold;
+    padding-left: 0.7rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      translate: 0 -50%;
+      width: 2px;
+      height: 9px;
+      background-color: g.$c-green__light;
+    }
+  }
+
+  //事例紹介トップ
+  .p-casestudy-fv {
+    .c-grid-outer {
+      padding-inline: 0;
+    }
+  }
+  .p-casestudy-fv__ttl {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+  .p-casestudy-fv__pickup__client {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .p-casestudy-fv__pickup--ttl {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+  .p-casestudy-fv__pickup {
+    padding-top: 0;
+    border: none;
+    margin-bottom: 5rem;
+
+    .c-cat-list,
+    .c-tag-list {
+      font-size: 1rem;
+    }
+    .js-casestudy-pickup-slider {
+      margin-bottom: 1rem;
+      padding-inline: 1.5rem;
+
+      .splide__track {
+        padding-top: 0;
+      }
+      .splide__slide {
+        .c-card {
+          scale: 1;
+        }
+      }
+    }
+    .js-casestudy-pickup-slider-thumbnail {
+      .splide__list {
+        justify-content: flex-start;
+      }
+      .splide__track {
+        padding-inline: 1.5rem !important;
+
+        &:has(.splide__slide:nth-of-type(1).is-active) {
+          mask-image: linear-gradient(
+            to right,
+            black 0%,
+            black calc(100% - 1.5rem),
+            transparent 100%
+          );
+        }
+        &:not(:has(.splide__slide:last-child.is-visible)) {
+          mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 1.5rem,
+            black calc(100% - 1.5rem),
+            transparent 100%
+          );
+        }
+        &:has(.splide__slide:last-child.is-visible) {
+          mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 1.5rem,
+            black 100%
+          );
+        }
+      }
+      .img-ov {
+        border-radius: 5px;
+      }
+    }
+  }
+  .p-casestudy-fv__pickup__detail {
+    bottom: 1.4rem;
+    padding-inline: 1.4rem;
+  }
+
+  //事例紹介詳細
+  .single-case_study {
+    .c-content {
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+    .p-casestudy-nav {
+      position: relative;
+      padding-top: 3rem;
+      margin-top: 5rem;
+      display: block;
+      margin-bottom: 0;
+
+      &:before {
+        content: "";
+        width: calc(100% + 3rem);
+        display: block;
+        height: 1px;
+        left: -1.5rem;
+        position: absolute;
+        top: 0;
+        background-color: g.$c-gray__2;
+      }
+    }
+  }
+  .p-casestudy-fv__slider {
+    margin-bottom: 4.2rem;
+    .splide__slide {
+      border-radius: 15px;
+    }
+  }
+  .p-casestudy-single-intro {
+    padding: 0;
+    border: none;
+    margin-bottom: 5.1rem;
+
+    h2.p-casestudy-single-intro__ttl,
+    p.p-casestudy-single-intro__ttl {
+      font-size: 1.6rem;
+    }
+    p.p-casestudy-single-intro__ttl {
+      .c-main:not(.non-module) & {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .p-casestudy-single-intro__item {
+    flex-direction: column;
+    gap: 0.3rem;
+
+    &:not(:last-child) {
+      padding-bottom: 2rem;
+    }
+  }
+  .p-casestudy-single-intro__staff__img {
+    width: 6rem;
+  }
+  .p-casestudy-single-intro__staff {
+    gap: 1rem;
+  }
+  .p-casestudy-single-intro__staff__detail {
+    translate: 0 0.4rem;
+  }
+  .p-casestudy-single-intro__detail {
+    &:has(.p-casestudy-single-intro__staff) {
+      margin-top: 1rem;
+    }
+  }
+  .c-case_study-list--item {
+    padding: 2rem 0 1.9rem;
+    position: relative;
+    z-index: 1;
+    @include g.dotted-line-top;
+
+    .c-card-body {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .img-ov {
+      width: 10rem;
+      border-radius: 10px;
+    }
+    .c-case_study-list--content {
+      width: calc(100% - 10rem - 1.5rem);
+    }
+    .c-case_study-list__client {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .c-case_study-list--ttl {
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+    .c-case_study-list__detail {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  #casestudy{
+    .p-news-related .c-case_study-list--item{
+      padding-bottom: 1.9rem;
+    }
+  }
+}

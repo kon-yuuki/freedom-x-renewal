@@ -1,0 +1,134 @@
+@use "../../_foundation/global" as g;
+
+//ニュース全体
+.news {
+  .p-top-news__pickup {
+    border-top: 1px solid g.$c-gray__2;
+    padding-top: 2rem;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.p-top-news__pickup--ttl {
+  font-size: 1rem;
+  font-family: g.$font-bold;
+  margin-bottom: 2rem;
+}
+
+//詳細ページ
+.p-news-related {
+  background-color: g.$c-gray__bg;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+}
+.p-news-related__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.p-news-related__ttl {
+  font-size: 3.4rem;
+  font-family: g.$font-bold;
+}
+
+.p-news-kv {
+  margin-bottom: 5rem;
+  border-radius: 1.75rem;
+  overflow: hidden;
+
+  img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .news {
+    .p-top-news__pickup {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+  .p-news-category__ttl {
+    font-size: 1rem;
+    font-family: g.$font-bold;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .p-top-news__pickup--ttl {
+    margin-bottom: 0.8rem;
+  }
+  .p-top-news__pickup {
+    .c-news-list__date {
+      margin-bottom: 0.8rem;
+    }
+  }
+  .p-news-fv {
+    padding-bottom: 3rem;
+    margin-bottom: 2.8rem;
+    border-bottom: 0.5px solid g.$c-gray__2;
+
+    .news-category & {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  //詳細ページ
+  .p-news-related__heading{
+    align-items: center;
+  }
+  .single-news {
+    .c-content {
+      flex-direction: column;
+      gap: 0;
+    }
+    .p-news-fv {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
+    }
+    .c-side {
+      padding-top: 3rem;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -1.5rem;
+        top: 0;
+        width: 100vw;
+        height: 1px;
+        background-color: g.$c-gray__2;
+      }
+    }
+    .c-main{
+      padding-bottom: 5rem;
+    }
+    .c-content{
+      padding-bottom: 6rem;
+    }
+  }
+  .p-news-kv {
+    margin-bottom: 4rem;
+  }
+  .p-news-related__ttl{
+    font-size: 2.2rem;
+  }
+  .p-news-related{
+    padding-top: 6rem;
+    position: relative;
+
+    &:after{
+      content:'';
+      position: absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:5rem;
+      background-color: g.$c-gray__bg;
+      translate:0 100%;
+      pointer-events: none;
+    }
+  }
+}

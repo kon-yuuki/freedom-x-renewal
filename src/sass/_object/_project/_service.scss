@@ -1,0 +1,356 @@
+@use "../../_foundation/global" as g;
+
+.service {
+
+  .c-mainGrid {
+    padding-inline: 0;
+  }
+}
+
+.p-service-fv {
+  margin-bottom: 6.5rem;
+}
+
+.p-service-fv__visual {
+  margin-bottom: 11rem;
+  width: 100%;
+  aspect-ratio: 1360/420;
+}
+
+.p-service-fv__detail {
+  font-size: 1.6rem;
+  width: 21.5%;
+  line-height: 1.7;
+  padding-top: 3rem;
+}
+.p-service-fv__txt {
+  margin-bottom: 2.5rem;
+}
+
+.p-service-fv__figure {
+  width: 74%;
+}
+
+.p-service-fv__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  .c-ttl__h2,
+  .c-ttl__wrapper {
+    border-color: currentColor;
+  }
+}
+
+//サービス一覧
+.p-service-list__heading {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: g.$font-bold;
+  gap: 1.3rem;
+}
+.p-service-list__ttl {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  .c-linelink__txt {
+    display: inline-block;
+  }
+}
+.p-service-list__main {
+  --gap: 4rem;
+  row-gap: 7rem;
+}
+.p-service-list__img {
+  border-radius: 20px;
+  overflow: clip;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.p-service-list__lead {
+  font-size: 1.4rem;
+}
+.p-service-list__txt {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.7;
+}
+
+.p-service-list__child {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  @include g.dotted-line-top;
+}
+.p-service-list__child--link {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .img-ov {
+    border-radius: 5px;
+    overflow: clip;
+    width: 5.8rem;
+  }
+}
+.p-service-list__child--item {
+  width: auto;
+}
+.p-service-list__child--ttl {
+  font-size: 1.6rem;
+  font-family: g.$font-bold;
+
+  .c-linelink__txt {
+    display: inline-block;
+  }
+}
+
+.p-service-list__badge-list {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.5rem;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+}
+.p-service-list__badge {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  backdrop-filter: blur(5px);
+  border: 1px solid;
+  font-size: 0.5rem;
+  font-family: g.$font-bold;
+  line-height: 1;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: -0.2rem;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+}
+
+.p-service-list__badge--number {
+  font-size: 1.4rem;
+  font-family: g.$font-en-bold;
+  line-height: 1;
+  font-weight: bold;
+}
+
+//解決できる課題
+.p-service-solution__heading {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.p-service-solution__ttl {
+  font-size: 1.8rem;
+  font-family: g.$font-bold;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+  order:2;
+}
+
+.p-service-solution__icon {
+  width: 5rem;
+  border-radius: 5px;
+  margin-bottom: 1.6rem;
+  order:1;
+}
+
+.p-service-solution__detail {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  order:3;
+}
+
+.p-service-solution__item {
+  padding-inline: 3rem;
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(black, 0.1);
+  }
+}
+
+//なぜFREEDOM Xが選ばれるのか
+.p-service-feature__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 4rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.p-service-feature__visual {
+  width: 30.5%;
+  border-radius: 20px;
+  overflow: clip;
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-service-feature__detail {
+  width: 65%;
+}
+
+.p-service-feature__ttl {
+  font-size: 2.4rem;
+  font-family: g.$font-bold;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(black, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.p-service-feature__txt {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+@media(max-width:1023px){
+  .p-service-fv{
+    margin-bottom: 0;
+  }
+  .p-service-fv__visual{
+    aspect-ratio: 375/290;
+  }
+  .p-service-fv__content{
+    flex-direction: column-reverse;
+    gap: 0.8rem;
+  }
+  .p-service-fv__detail{
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 0;
+  }
+  .p-service-fv__figure{
+    width: 87%;
+    margin-inline: auto;
+    margin-bottom: -4.4rem;
+  }
+  .p-service-list__main{
+    --col:1;
+    row-gap:4rem;
+  }
+  .p-service-list__img{
+    border-radius: 15px;
+  }
+  .p-service-list__badge{
+    border-width: .5px;
+    
+    &:before{
+      border-width: .5px;
+    }
+  }
+  .p-service-list__ttl{
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .p-service-list__txt{
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .p-service-list__child--ttl{
+    font-size: 1.2rem;
+  }
+  .p-service-list__child{
+    flex-direction: column;
+
+    &:before{
+      display: none;
+    }
+  }
+  .p-service-list__child--item{
+    width: 100%;
+    @include g.dotted-line-top;
+  }
+  .p-service-list__child--link{
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    gap:1.7rem;
+  }
+  .p-service-list__heading{
+    gap:1.5rem;
+  }
+  .p-service-solution__list{
+    --col:1;
+  }
+  .p-service-solution__item{
+    grid-template-columns: 5rem auto;
+    grid-template-rows:auto auto;
+    column-gap:2rem;
+    padding-inline:0;
+    @include g.dotted-line-bottom;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+
+    &:before{
+      display: none;
+    }
+  }
+  .p-service-solution__detail{
+    grid-column:2;
+    font-size: 1.2rem;
+  }
+  .p-service-solution__icon{
+    margin-bottom: 0;
+  }
+  .p-service-solution__ttl{
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .p-service-feature__item{
+    flex-direction: column-reverse;
+    gap:2rem;
+
+    &:not(:last-child){
+      margin-bottom: 2.3rem;
+    }
+  }
+  .p-service-feature__visual{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .p-service-feature__detail{
+    width: 100%;
+  }
+  .p-service-feature__ttl{
+    padding-top: 0;
+    border:none;
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+  }
+  .p-service-feature__txt{
+    font-size: 1.2rem;
+  }
+}

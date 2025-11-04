@@ -1,0 +1,65 @@
+[2025-10-10 04:28:36] [ddcf53797da36587244c36cf78f3c917] confirm.php実行開始
+[2025-10-10 04:28:36] [ddcf53797da36587244c36cf78f3c917] セッションID: ddcf53797da36587244c36cf78f3c917
+[2025-10-10 04:28:36] [ddcf53797da36587244c36cf78f3c917] POSTデータ: Array
+(
+    [form_action] => confirm
+    [inquiry-type] => service
+    [service-name] => landi-pro
+    [service-category] => operation
+    [company] => 
+    [contact_name] => こんゆうき
+    [email] => etll.1b.yyy@icloud.com
+    [phone] => 09030146237
+    [source] => Array
+        (
+            [0] => newspaper
+        )
+
+    [message] => aaa
+    [privacy-agree] => agree
+)
+
+[2025-10-10 04:28:36] [ddcf53797da36587244c36cf78f3c917] セッションデータ: Array
+(
+    [value] => 1
+    [contact_post_data] => Array
+        (
+            [form_action] => confirm
+            [inquiry-type] => service
+            [service-name] => landi-pro
+            [service-category] => operation
+            [company] => 
+            [contact_name] => こんゆうき
+            [email] => etll.1b.yyy@icloud.com
+            [phone] => 09030146237
+            [source] => Array
+                (
+                    [0] => newspaper
+                )
+
+            [message] => aaa
+            [privacy-agree] => agree
+        )
+
+)
+
+[2025-10-10 04:32:37] [7f1edb840e386e64671917aaee1fa09a] confirm.php実行開始
+[2025-10-10 04:32:37] [7f1edb840e386e64671917aaee1fa09a] セッションID: 7f1edb840e386e64671917aaee1fa09a
+[2025-10-10 04:32:37] [7f1edb840e386e64671917aaee1fa09a] POSTデータ: Array
+(
+    [company] => 
+    [department] => 
+    [position] => manager
+    [name] => こんゆうき
+    [email] => etll.1b.yyy@icloud.com
+    [phone] => 09030146237
+    [message] => あああ
+    [privacy-agree] => agree
+    [notice-agree] => agree
+)
+
+[2025-10-10 04:32:37] [7f1edb840e386e64671917aaee1fa09a] セッションデータ: Array
+(
+    [value] => 1
+)
+

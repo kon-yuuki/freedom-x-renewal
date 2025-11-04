@@ -1,0 +1,6 @@
+@function vwPc($px) {
+  @return ($px / 1360) * 100vw;
+}
+@function vhPc($px) {
+  @return ($px / 700) * 100vh;
+}

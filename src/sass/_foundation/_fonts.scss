@@ -1,0 +1,44 @@
+@charset "utf-8";
+/**
+ * _font.scss
+ */
+
+@font-face {
+  font-family: "tt_norms_regular";
+  src: url("/font/tt_norms_regular.woff") format("woff");
+  font-weight: 400;
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_norms_normal";
+  src: url("/font/tt_norms_normal.woff") format("woff");
+  font-weight: 700;
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tt_norms_bold";
+  src: url("/font/tt_norms_bold.woff") format("woff");
+  font-weight: 900;
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "line_bold";
+  src: url("/font/LINESeedJP_OTF_Bd.woff2") format("woff");
+  font-weight: 700;
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "line_regular";
+  src: url("/font/LINESeedJP_OTF_Rg.woff2") format("woff2");
+  font-weight: 400;
+  font-display: block;
+  font-style: normal;
+}

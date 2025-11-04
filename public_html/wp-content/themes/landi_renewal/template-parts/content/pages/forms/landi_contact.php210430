@@ -1,0 +1,41 @@
+
+<div id="wrap">
+
+	<div class="ttl_subpage_02 animation">
+		<h1>
+			<em>CONTACT</em>
+			<span>ランディ導入店募集</span>
+		</h1>
+	</div>
+
+
+<article class="old_type">
+	<section class="narrow_section">
+	    <div class="text_box">
+		    <p>ハウスメーカー・工務店・設計事務所などを対象とした「土地探し顧客の集客・接客・追客」を支援するこれまでにない不動産TECサービスです。</p>
+	    </div>
+
+	</section>
+
+	<section class="narrow_section">
+	    <div class="text_box">
+		    <h2 class="line">ランディ導入店募集</h2>
+		    <div class="form_box">
+				<?php
+the_content();
+?>
+		    </div>
+	    </div>
+
+	</section>
+
+
+
+
+
+</article>
+
+
+<!--#include virtual="/inc/footer.html"-->
+
+</div><!-- wrap -->

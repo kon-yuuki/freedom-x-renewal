@@ -1,0 +1,271 @@
+@use "global" as g;
+
+//フォント
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span,
+div,
+dl,
+dt,
+dd,
+li,
+strong,
+th,
+td,
+tr,
+button,
+input,
+textarea,
+select,
+a {
+  font-feature-settings: "palt";
+}
+
+:root {
+  //グリッドサイズ
+  --main-grid-width: 110rem;
+  --main-grid-width-reading: 80rem; //読み物形のメインカラム幅
+
+  //サイドナビサイズ
+  --side-nav-width: 23rem;
+  --side-nav-width-blog: 25.6rem;
+
+  //サムネアスペクト比
+  --news-thumbnail: 700/394;
+
+  //グローバル変数
+  --leading-trim: calc((1em - 1lh) / 2);
+
+  //共通スタイル
+  --thumbnail_shadow: 0 7px 12px #00000033;
+  --section-radius: 2rem;
+  scrollbar-width: 50px;
+  --line-width: 1px; //下線リンクの太さ
+  --base-letter-spacing: 0.04rem; //本文の文字間
+  --bottom-offset: 0px; //下線リンクの下線の位置
+  --h2-padding-top: 9rem;
+
+  //グリッド幅
+  --sp-grid-outer: 1.5rem;
+
+  @media (max-width: 1023px) {
+    --h2-padding-top: 6rem;
+  }
+}
+
+/* html, body */
+html {
+  font-size: 10px;
+}
+body {
+  &.renewal {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-break: strict;
+    font-family: g.$font;
+    color: g.$c-blue__deep;
+
+    #renewal-wrap {
+      max-width: 100%;
+      overflow: clip;
+      background-color: white;
+    }
+
+    &.bg-gray {
+      #renewal-wrap {
+        background-color: g.$c-gray__bg;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  body {
+    &.renewal {
+      #renewal-wrap {
+        padding-top: 6rem;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 6rem;
+          width: 100%;
+          height: 1px;
+          background-color: g.$c-gray__2;
+          z-index: 1;
+        }
+      }
+
+      &#company,&#feature{
+        #renewal-wrap{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+
+// SP
+@media only screen and (max-width: g.$size-sp) {
+  html {
+    font-size: 2.67vw; //375用 10/375*100
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  strong {
+    .has-luminous-vivid-amber-background-color {
+      font-weight: normal;
+    }
+  }
+}
+
+#wrapper {
+  position: relative;
+}
+
+.en {
+  font-family: g.$font-en;
+}
+
+.en-bold {
+  font-family: g.$font-en-normal;
+  font-weight: 700;
+}
+
+/* a */
+a {
+  color: inherit;
+  pointer-events: all;
+  display: inline-block;
+}
+button[type="button"]{
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* img */
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* input, textarea */
+$color-placeholder: #cccccc;
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: g.$c-blue__deep;
+  font-family: g.$font;
+  appearance: none;
+  &::placeholder,
+  &:placeholder-shown,
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder {
+    color: $color-placeholder;
+  }
+}
+input::-ms-clear {
+  visibility: hidden;
+}
+input::-ms-reveal {
+  visibility: hidden;
+}
+
+/* select */
+select {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: g.$c-blue__deep;
+  font-family: g.$font;
+  cursor: pointer;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+/* button */
+button {
+  box-sizing: border-box;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* svg symbols */
+.symbols {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+//===================================================================
+//スクロールロック
+//===================================================================
+
+body {
+  &.is-scrollLock {
+    overflow: hidden;
+    height: 100vh;
+    pointer-events: none;
+  }
+}
+
+a[disabled],
+button[disabled] {
+  cursor: not-allowed;
+}
+
+//reCAPtCHA非表示
+.grecaptcha-badge {
+  visibility: hidden;
+}

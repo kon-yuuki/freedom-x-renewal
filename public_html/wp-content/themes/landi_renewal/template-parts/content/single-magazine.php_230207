@@ -1,0 +1,69 @@
+<?php
+$template_pass = get_template_pass();
+
+$post_meta = get_post_custom();
+
+?>
+
+<div id="wrap">
+
+<article class="old_type">
+	<ul class="Breadcrumb">
+	    <li><a href="<?php echo esc_url(home_url("/")); ?>">ホーム</a></li>
+	    <li><a href="<?php echo esc_url(home_url("/magazine")); ?>">ランディマガジン</a></li>
+	    <li><?= the_title(); ?></li>
+	</ul>
+	<section>
+	    <div class="detail_article">
+
+		    <div class="main_article">
+
+				<a href="https://yappli.plus/landiapp_lp" class="bnr_img" target="_blank">
+					<img src="<?= get_template_directory_uri(); ?>/src/img/banner.png?220111" alt="不動産屋に訪問不要で非公開物件情報も無料で見れる！家づくりで土地探しに困ったらランディ 今すぐダウンロード" >
+				</a>
+
+			    <?php the_content(); ?>
+				
+					<?php // 現在の投稿に隣接している前後の投稿を取得する
+						$prev_post = get_previous_post() ?? null; // 前の投稿を取得
+						$next_post = get_next_post() ?? null; // 次の投稿を取得
+
+						if( $prev_post && $prev_post->post_status === "publish" ||
+						$next_post && $next_post->post_status === "publish"): // どちらか一方があれば表示
+					?>
+					<div class="pages">
+					<?php if( $prev_post ): // 前の投稿があれば表示 ?>
+						<div class="item">
+							<a href="<?php echo get_permalink( $prev_post->ID ); ?>"></a>
+							<em>前の記事</em>
+								<!-- 前の記事を取得 -->
+								<p><?php echo get_the_title( $prev_post->ID ); ?></p>
+								<i class="icon-left"></i>
+						</div>
+						<?php endif; ?>
+						<?php if(!empty($next_post )): // 次の投稿があれば表示 ?>
+						<div class="item">
+							<a href="<?php echo get_permalink( $next_post->ID ); ?>"></a>
+								<em>次の記事</em>
+								<!-- 次の記事を取得 -->
+								<p><?php echo get_the_title( $next_post->ID ); ?></p>
+								<i class="icon-right"></i>
+							</div>
+						<?php endif; ?>
+					</div>
+					<?php endif; ?>
+
+			    </div><!-- article_contents -->
+
+		    </div><!-- main_article -->
+
+		    <?php get_template_part($template_pass."/sidebar-magazine"); ?>
+	    </div><!-- detail_article -->
+
+    </section>
+
+</article>
+
+
+</div><!-- wrap -->
+

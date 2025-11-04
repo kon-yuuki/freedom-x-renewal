@@ -1,0 +1,406 @@
+@use "../_foundation/global" as g;
+
+//-------------------------------------------
+//フォーム要素基本設定
+//-------------------------------------------
+#materials,
+#contact {
+  input,
+  textarea,
+  select {
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    width: 100%;
+    background-color: g.$c-gray__bg;
+    border-radius: 5px;
+    padding-inline: 1.5rem;
+    padding-block: 1.7rem;
+  }
+
+  select {
+    line-height: 1.5;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    border-radius: 50%;
+    outline: none;
+    width: 2rem;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    margin: 0 0.8rem 0 0;
+    position: relative;
+    background-color: white;
+    padding: 0;
+
+    &:not(:checked) {
+      border: 1px solid #cccccc;
+      background-color: white;
+    }
+  }
+
+  input[type="checkbox"]:not([type="radio"]) {
+    border-radius: 5px;
+
+    &:before {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      content: "";
+      border-radius: 5px;
+      background-image: url("../images/common/check-mark.svg");
+      background-size: cover;
+    }
+
+    &:checked {
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .radio-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    border: 1px solid g.$c-gray__1;
+    border-radius: 5px;
+    padding-left: 1rem;
+    overflow: clip;
+
+    label {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 1.4rem 1.3rem 1.4rem 0rem;
+      position: relative;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 -5rem;
+      }
+    }
+
+    &:has(input:checked) {
+      font-family: g.$font-bold;
+      border-color: #07a007;
+
+      input {
+        border: 1px solid g.$c-gray__1;
+      }
+    }
+  }
+
+  .form-field {
+    p {
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &:has(input:checked) {
+      font-family: g.$font-bold;
+    }
+    &:has(#privacy-agree),
+    &:has(#notice-agree) {
+      border: 1px solid g.$c-gray__1;
+      border-radius: 5px;
+      padding-left: 2rem;
+      overflow: clip;
+
+      label {
+        padding: 2rem 1.5rem;
+        padding-left: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        &:before {
+          content: "";
+          position: absolute;
+          inset: 0 0 0 -5rem;
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0.3rem;
+      border-radius: 50%;
+      opacity: 0;
+      aspect-ratio: 1/1;
+      background-color: #07a007;
+    }
+    &:checked {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  form {
+    .form-ttl {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      font-family: g.$font-bold;
+    }
+    .form-item {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+      &:has(input[type="checkbox"]) {
+        .form-detail {
+          margin-bottom: 1.4rem;
+        }
+      }
+
+      &:has(.required-mark) {
+        &:has(.is-error) {
+          .error {
+            visibility: visible;
+            display: block;
+          }
+          .error-text.required {
+            visibility: visible;
+            display: inline-block;
+          }
+          textarea,
+          input:not([type="checkbox"]),
+          select {
+            border: 1px solid #ce161e;
+            background-color: #fff0f0 !important;
+          }
+        }
+
+        &:has(.is-validate) {
+          .error-text.validate {
+            visibility: visible;
+            display: inline-block;
+          }
+          .error {
+            visibility: visible;
+            display: block;
+          }
+          textarea,
+          input:not([type="checkbox"]) {
+            border: 1px solid #ce161e;
+            background-color: #fff0f0 !important;
+          }
+        }
+      }
+      &:has(.is-entered) {
+        .check {
+          visibility: visible;
+          display: block;
+        }
+      }
+    }
+    .form-detail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      & > p {
+        line-height: 1.45;
+        span {
+          line-height: 1;
+        }
+      }
+    }
+    .error-text {
+      font-size: 1.2rem;
+      visibility: hidden;
+      margin-top: 1rem;
+      display: none;
+      color: #ce161e;
+    }
+
+    .form-content,
+    p:has(.arw-icon) {
+      position: relative;
+    }
+    .status-icon,
+    .arw-icon {
+      position: absolute;
+      right: 2.1rem;
+      top: 2.1rem;
+      aspect-ratio: 1/1;
+      width: 2rem;
+      overflow: visible;
+      display: block;
+
+      svg {
+        width: 100%;
+        display: block;
+        height: 103%;
+        position: absolute;
+        inset: 0;
+      }
+      .error,
+      .check {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    .arw-icon {
+      svg {
+        stroke: rgb(black, 0.5);
+        fill: none;
+      }
+    }
+  }
+  .p-form {
+    .js-contactBtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-block: 5rem;
+      font-size: 1.6rem;
+      cursor: pointer;
+      pointer-events: all;
+      &.is-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+
+        &:before {
+          display: none;
+        }
+        .c-btn__txt {
+          &:before {
+            display: none;
+          }
+        }
+        @include g.hover {
+          .char {
+            transform: none;
+            opacity: 1;
+          }
+          .c-btn-arw svg {
+            animation: none;
+          }
+        }
+      }
+    }
+  }
+
+  .required-mark {
+    display: inline-block;
+    color: #ce161e;
+    font-family: g.$font-bold;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  #materials,
+  #contact {
+    form {
+      .form-ttl,
+      .required-mark {
+        font-size: 1.2rem;
+        font-family: g.$font;
+        margin-bottom: 0.3rem;
+      }
+      input:not([type="checkbox"]):not([type="radio"]),
+      textarea,
+      select {
+        font-size: 1.6rem;
+        padding-block: 1.2rem;
+      }
+      input[type="radio"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+      .error-text {
+        font-size: 1rem;
+        margin-top: 0;
+      }
+      .checkbox-item,
+      .radio-item {
+        font-size: 1.4rem;
+
+        &:has(#privacy-agree) {
+          padding-left: 1rem;
+        }
+      }
+      .radio-group {
+        gap: 0.5rem;
+      }
+      .checkbox-group {
+        margin-top: 1rem;
+      }
+      .radio-item {
+        padding-left: 0.9rem;
+
+        label {
+          padding: 1rem 1.3rem 0.9rem 0rem;
+        }
+      }
+      .status-icon,
+      .arw-icon {
+        width: 1.5rem;
+        right: 1.5rem;
+        top: 1.75rem;
+      }
+      .form-item {
+        &:not(:last-child) {
+          margin-bottom: 2.1rem;
+        }
+      }
+      .form-field {
+        p {
+          font-size: 1.2rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .p-form {
+      .js-contactBtn {
+        font-size: 1.4rem;
+        padding-block: 2.5rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}

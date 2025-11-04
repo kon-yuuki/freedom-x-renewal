@@ -1,0 +1,33 @@
+//游ゴシック
+//typesquare
+$font: "YakuHanJP", "line_regular", sans-serif;
+$font-bold: "YakuHanJP", "line_bold", sans-serif;
+
+$font-en: "tt_norms_regular", sans-serif;
+$font-en-normal: "tt_norms_normal", sans-serif;
+$font-en-bold: "tt_norms_bold", sans-serif;
+
+// color
+$c-blue__deep: #204659;
+$c-green: #004e5d;
+$c-green__light: #498989;
+$c-green__pale: #92b2b8;
+$c-beige: #eee6d8;
+$c-beige__light: #d9d1c5;
+$c-beige__dark: #736f6a;
+$c-gray__1: #d9ddde;
+$c-gray__2: #dadfe0;
+$c-gray__bg: #ededf0;
+$c-red:#D03A1C;
+$c-txt-green:#46A26F;
+$c-txt-green--bright:#21EA7B;
+
+// device
+$size-tb: 1279px;
+$size-sp: 1023px;
+$size-sp_s: 639px;
+$size-sp_xs: 374px;
+
+$duration: 0.3s;
+$easing: cubic-bezier(0.39, 0.575, 0.565, 1);
+$easing-out: cubic-bezier(0.55, 0.05, 0.22, 0.99);

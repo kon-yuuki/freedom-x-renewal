@@ -1,0 +1,9 @@
+<FilesMatch "\.pdf$">
+Header set X-Robots-Tag "noindex"
+</FilesMatch>
+
+SetEnvIf User-Agent "Googlebot" shutout
+
+order Allow,Deny
+Allow from all
+Deny from env=shutout

@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/******************************************************
+
+fonts
+
+******************************************************/
+:placeholder-shown {
+  color: #777777; }
+
+/*******************************************
+    
+PC SP form
+
+*******************************************/
+@media screen and (max-width: 740px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%; } }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0 6px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  -webkit-appearance: none;
+  border: #777777 solid 1px;
+  border-radius: 3px;
+  background: #fff; }
+  input[type="text"].narrow,
+  input[type="email"].narrow,
+  input[type="tel"].narrow {
+    width: 20%; }
+  input[type="text"].middle,
+  input[type="email"].middle,
+  input[type="tel"].middle {
+    width: 40%; }
+  input[type="text"].wide,
+  input[type="email"].wide,
+  input[type="tel"].wide {
+    width: 60%; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    background: #fff; }
+
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  width: 100%;
+  height: 140px;
+  padding: 6px;
+  box-sizing: border-box;
+  border: #777777 solid 1px;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  background: #fff; }
+
+.selectBox {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top; }
+  .selectBox select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: medium none;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    height: 40px;
+    margin: 0;
+    padding: 0 6px;
+    box-sizing: border-box;
+    background: #fff;
+    border: #777777 solid 1px;
+    padding-right: 50px;
+    color: #121212;
+    width: 125%;
+    max-width: none;
+    box-shadow: none;
+    border-radius: 3px;
+    background: #fff; }
+    .selectBox select option, .selectBox select optgroup {
+      color: #121212;
+      font-style: normal; }
+  .selectBox:before {
+    content: "";
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    background: #777777;
+    z-index: 1;
+    pointer-events: none; }
+  .selectBox:after {
+    background: #fff;
+    color: #121212;
+    content: "▼";
+    font-size: 1rem;
+    height: 100%;
+    line-height: 40px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 40px;
+    box-sizing: border-box;
+    border: #777777 solid 1px;
+    border-left: 0;
+    display: inline-block; }
+
+.checkBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; }
+  .checkBox .check input[type="checkbox"] {
+    display: none; }
+  .checkBox .check input[type="checkbox"]:checked ~ label {
+    color: #121212; }
+    .checkBox .check input[type="checkbox"]:checked ~ label:after {
+      width: 0px;
+      left: calc(28px - 2px); }
+  .checkBox .check label {
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    color: #121212;
+    font-size: 1.6rem;
+    line-height: 1; }
+    .checkBox .check label:before {
+      display: inline-block;
+      content: "";
+      width: 28px;
+      height: 28px;
+      border: #777777 solid 1px;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: 3px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: #fff; }
+    .checkBox .check label:after {
+      display: inline-block;
+      content: "";
+      width: calc( 28px - 2px);
+      height: calc( 28px - 2px);
+      background: #fff;
+      border-radius: 3px;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      transition: all 0.2s ease;
+      backface-visibility: hidden;
+      z-index: 10; }
+    .checkBox .check label span {
+      display: inline-block;
+      line-height: 28px; }
+      .checkBox .check label span:before {
+        content: "\e906";
+        font-family: "icomoon";
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        width: calc( 28px - 2px);
+        height: calc( 28px - 2px);
+        text-align: center;
+        line-height: calc( 28px - 2px);
+        color: #00aa65; }
+
+.radioBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; }
+  .radioBox.vertical {
+    display: block;
+    text-align: left; }
+    .radioBox.vertical .radio + .radio {
+      margin-left: 0px;
+      margin-top: 20px; }
+  .radioBox .radio input[type="radio"] {
+    display: none; }
+  .radioBox .radio input[type="radio"]:checked ~ label {
+    color: #121212; }
+    .radioBox .radio input[type="radio"]:checked ~ label:before {
+      background: #fff; }
+    .radioBox .radio input[type="radio"]:checked ~ label span:before {
+      background: #00aa65; }
+  .radioBox .radio label {
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    color: #121212;
+    font-size: 1.6rem;
+    line-height: 1; }
+    .radioBox .radio label:before {
+      display: inline-block;
+      content: "";
+      width: 28px;
+      height: 28px;
+      border: #777777 solid 1px;
+      border-radius: 50%;
+      position: relative;
+      top: 1px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: #fff; }
+    .radioBox .radio label span {
+      display: inline-block;
+      line-height: 28px; }
+      .radioBox .radio label span:before {
+        display: inline-block;
+        content: "";
+        width: calc(28px - 14px);
+        height: calc(28px - 14px);
+        border-radius: 50%;
+        position: relative;
+        top: 1px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 7px;
+        top: 7px;
+        background: #fff;
+        transition: all 0.2s ease;
+        backface-visibility: hidden; }
+  .radioBox .radio + .radio {
+    margin-left: 20px; }
+
+.submit input[type="submit"] {
+  margin: 0 auto; }
+  .submit input[type="submit"]:hover {
+    background: #00aa65;
+    color: #fff;
+    cursor: pointer; }
+
+@media screen and (max-width: 740px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100% !important;
+    height: 40px; }
+    input[type="text"].narrow,
+    input[type="email"].narrow,
+    input[type="tel"].narrow {
+      width: 30% !important; }
+  .radioBox .radio label,
+  .checkBox .check label {
+    padding-left: 40px; }
+    .radioBox .radio label span,
+    .checkBox .check label span {
+      font-size: 1.4rem; }
+  .selectBox select {
+    height: 40px; }
+  .selectBox:before {
+    height: 40px;
+    right: 40px; }
+  .selectBox:after {
+    line-height: 40px;
+    width: 40px; } }
+
+/*# sourceMappingURL=cmn_form.map */

@@ -1,0 +1,796 @@
+[2025-07-14 06:34:13] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:13] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /assets/images/top/fv.webp
+[2025-07-14 06:34:13] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:13] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /.well-known/appspecific/com.chrome.devtools.json
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /wp-content/themes/landi_renewal/src/css/layout.css.map
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /wp-content/themes/landi_renewal/src/css/style-corp.css.map
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /wp-content/themes/landi_renewal/src/css/style.css.map
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:15] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:16] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:16] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:16] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:18] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:18] [2e266ec01504013f4df95d55f3c07cf4] 404エラー検出: /assets/images/top/fv.webp
+[2025-07-14 06:34:18] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/404.php
+[2025-07-14 06:34:19] [2e266ec01504013f4df95d55f3c07cf4] 選択されたテンプレート: /var/www/html/wp-content/themes/landi_renewal/front-page.php
+[2025-07-14 06:34:29] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:34:29] [no-session] SERVER変数:
+[2025-07-14 06:34:29] [no-session] REQUEST_URI: /wp-login.php
+[2025-07-14 06:34:29] [no-session] HTTP_REFERER: http://localhost:3000/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%3A3002%2Fwp-admin%2F&reauth=1
+[2025-07-14 06:34:29] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded
+[2025-07-14 06:34:29] [no-session] CONTENT_LENGTH: 137
+[2025-07-14 06:34:29] [no-session] POST[log]: landi
+[2025-07-14 06:34:29] [no-session] POST[pwd]: UQSAZ4&F*NH*
+[2025-07-14 06:34:29] [no-session] POST[wp-submit]: ログイン
+[2025-07-14 06:34:29] [no-session] POST[redirect_to]: //localhost:3000/wp-admin/
+[2025-07-14 06:34:29] [no-session] POST[testcookie]: 1
+[2025-07-14 06:34:47] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:34:47] [no-session] SERVER変数:
+[2025-07-14 06:34:47] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:34:47] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=case_study
+[2025-07-14 06:34:47] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:34:47] [no-session] CONTENT_LENGTH: 1053
+[2025-07-14 06:34:47] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17553
+            [1] => post-17554
+            [2] => post-17555
+            [3] => post-17552
+            [4] => post-17520
+            [5] => post-12206
+            [6] => post-8885
+            [7] => post-8792
+            [8] => post-10609
+            [9] => post-9359
+            [10] => post-1790
+            [11] => post-507
+            [12] => post-1161
+            [13] => post-1160
+            [14] => post-1565
+            [15] => post-3706
+            [16] => post-3459
+            [17] => post-4470
+            [18] => post-4992
+            [19] => post-4860
+        )
+
+)
+
+[2025-07-14 06:34:47] [no-session] POST[interval]: 10
+[2025-07-14 06:34:47] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:34:47] [no-session] POST[action]: heartbeat
+[2025-07-14 06:34:47] [no-session] POST[screen_id]: edit-case_study
+[2025-07-14 06:34:47] [no-session] POST[has_focus]: true
+[2025-07-14 06:34:49] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:34:49] [no-session] SERVER変数:
+[2025-07-14 06:34:49] [no-session] REQUEST_URI: /wp-json/aioseo/v1/integration/semrush/refresh/
+[2025-07-14 06:34:49] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:34:49] [no-session] CONTENT_TYPE: なし
+[2025-07-14 06:34:49] [no-session] CONTENT_LENGTH: 0
+[2025-07-14 06:35:00] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:35:00] [no-session] SERVER変数:
+[2025-07-14 06:35:00] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:35:00] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:35:00] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:35:00] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:35:00] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752474889:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:35:00] [no-session] POST[interval]: 10
+[2025-07-14 06:35:00] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:35:00] [no-session] POST[action]: heartbeat
+[2025-07-14 06:35:00] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:35:00] [no-session] POST[has_focus]: false
+[2025-07-14 06:37:01] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:37:01] [no-session] SERVER変数:
+[2025-07-14 06:37:01] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:37:01] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:37:01] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:37:01] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:37:01] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752474889:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:37:01] [no-session] POST[interval]: 10
+[2025-07-14 06:37:01] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:37:01] [no-session] POST[action]: heartbeat
+[2025-07-14 06:37:01] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:37:01] [no-session] POST[has_focus]: false
+[2025-07-14 06:38:25] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:25] [no-session] SERVER変数:
+[2025-07-14 06:38:25] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:25] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:38:25] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:38:25] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:38:25] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752474889:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:38:25] [no-session] POST[interval]: 10
+[2025-07-14 06:38:25] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:38:25] [no-session] POST[action]: heartbeat
+[2025-07-14 06:38:25] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:38:25] [no-session] POST[has_focus]: true
+[2025-07-14 06:38:29] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:29] [no-session] SERVER変数:
+[2025-07-14 06:38:29] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:29] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:38:29] [no-session] CONTENT_TYPE: multipart/form-data; boundary=----WebKitFormBoundaryzWg88VNBSI9J1iho
+[2025-07-14 06:38:29] [no-session] CONTENT_LENGTH: 475
+[2025-07-14 06:38:29] [no-session] POST[action]: wp-remove-post-lock
+[2025-07-14 06:38:29] [no-session] POST[_wpnonce]: 5da700f274
+[2025-07-14 06:38:29] [no-session] POST[post_ID]: 17553
+[2025-07-14 06:38:29] [no-session] POST[active_post_lock]: 1752474889:1
+[2025-07-14 06:38:30] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:30] [no-session] SERVER変数:
+[2025-07-14 06:38:30] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:30] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=case_study
+[2025-07-14 06:38:30] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:38:30] [no-session] CONTENT_LENGTH: 1053
+[2025-07-14 06:38:30] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17553
+            [1] => post-17554
+            [2] => post-17555
+            [3] => post-17552
+            [4] => post-17520
+            [5] => post-12206
+            [6] => post-8885
+            [7] => post-8792
+            [8] => post-10609
+            [9] => post-9359
+            [10] => post-1790
+            [11] => post-507
+            [12] => post-1161
+            [13] => post-1160
+            [14] => post-1565
+            [15] => post-3706
+            [16] => post-3459
+            [17] => post-4470
+            [18] => post-4992
+            [19] => post-4860
+        )
+
+)
+
+[2025-07-14 06:38:30] [no-session] POST[interval]: 10
+[2025-07-14 06:38:30] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:38:30] [no-session] POST[action]: heartbeat
+[2025-07-14 06:38:30] [no-session] POST[screen_id]: edit-case_study
+[2025-07-14 06:38:30] [no-session] POST[has_focus]: true
+[2025-07-14 06:38:37] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:37] [no-session] SERVER変数:
+[2025-07-14 06:38:37] [no-session] REQUEST_URI: /wp-json/aioseo/v1/integration/semrush/refresh/
+[2025-07-14 06:38:37] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:38:37] [no-session] CONTENT_TYPE: なし
+[2025-07-14 06:38:37] [no-session] CONTENT_LENGTH: 0
+[2025-07-14 06:38:47] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:47] [no-session] SERVER変数:
+[2025-07-14 06:38:47] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:47] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:38:47] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:38:47] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:38:47] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:38:47] [no-session] POST[interval]: 10
+[2025-07-14 06:38:47] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:38:47] [no-session] POST[action]: heartbeat
+[2025-07-14 06:38:47] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:38:47] [no-session] POST[has_focus]: true
+[2025-07-14 06:38:49] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:49] [no-session] SERVER変数:
+[2025-07-14 06:38:49] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:49] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=case_study
+[2025-07-14 06:38:49] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:38:49] [no-session] CONTENT_LENGTH: 1054
+[2025-07-14 06:38:49] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17553
+            [1] => post-17554
+            [2] => post-17555
+            [3] => post-17552
+            [4] => post-17520
+            [5] => post-12206
+            [6] => post-8885
+            [7] => post-8792
+            [8] => post-10609
+            [9] => post-9359
+            [10] => post-1790
+            [11] => post-507
+            [12] => post-1161
+            [13] => post-1160
+            [14] => post-1565
+            [15] => post-3706
+            [16] => post-3459
+            [17] => post-4470
+            [18] => post-4992
+            [19] => post-4860
+        )
+
+)
+
+[2025-07-14 06:38:49] [no-session] POST[interval]: 10
+[2025-07-14 06:38:49] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:38:49] [no-session] POST[action]: heartbeat
+[2025-07-14 06:38:49] [no-session] POST[screen_id]: edit-case_study
+[2025-07-14 06:38:49] [no-session] POST[has_focus]: false
+[2025-07-14 06:38:53] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:53] [no-session] SERVER変数:
+[2025-07-14 06:38:54] [no-session] REQUEST_URI: /wp-json/aioseo/v1/integration/semrush/refresh/
+[2025-07-14 06:38:54] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:38:54] [no-session] CONTENT_TYPE: なし
+[2025-07-14 06:38:54] [no-session] CONTENT_LENGTH: 0
+[2025-07-14 06:38:58] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:38:58] [no-session] SERVER変数:
+[2025-07-14 06:38:58] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:38:58] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:38:58] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:38:58] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:38:58] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:38:58] [no-session] POST[interval]: 10
+[2025-07-14 06:38:58] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:38:58] [no-session] POST[action]: heartbeat
+[2025-07-14 06:38:58] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:38:58] [no-session] POST[has_focus]: false
+[2025-07-14 06:39:04] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:04] [no-session] SERVER変数:
+[2025-07-14 06:39:04] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:04] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:39:04] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:04] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:39:04] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [post_id] => 12206
+            [lock] => 1752475133:1
+        )
+
+)
+
+[2025-07-14 06:39:04] [no-session] POST[interval]: 10
+[2025-07-14 06:39:04] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:04] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:04] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:04] [no-session] POST[has_focus]: false
+[2025-07-14 06:39:08] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:08] [no-session] SERVER変数:
+[2025-07-14 06:39:08] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:08] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:08] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:08] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:08] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:08] [no-session] POST[interval]: 10
+[2025-07-14 06:39:08] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:08] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:08] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:08] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:14] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:14] [no-session] SERVER変数:
+[2025-07-14 06:39:14] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:14] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:39:14] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:14] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:14] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [post_id] => 12206
+            [lock] => 1752475144:1
+        )
+
+)
+
+[2025-07-14 06:39:14] [no-session] POST[interval]: 10
+[2025-07-14 06:39:14] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:14] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:14] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:14] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:18] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:18] [no-session] SERVER変数:
+[2025-07-14 06:39:18] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:18] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:18] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:18] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:18] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:18] [no-session] POST[interval]: 10
+[2025-07-14 06:39:18] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:18] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:18] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:18] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:24] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:24] [no-session] SERVER変数:
+[2025-07-14 06:39:24] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:24] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:39:24] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:24] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:39:24] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [post_id] => 12206
+            [lock] => 1752475154:1
+        )
+
+)
+
+[2025-07-14 06:39:24] [no-session] POST[interval]: 10
+[2025-07-14 06:39:24] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:24] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:24] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:24] [no-session] POST[has_focus]: false
+[2025-07-14 06:39:28] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:28] [no-session] SERVER変数:
+[2025-07-14 06:39:28] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:28] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:28] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:28] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:28] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:28] [no-session] POST[interval]: 10
+[2025-07-14 06:39:28] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:28] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:28] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:28] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:38] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:38] [no-session] SERVER変数:
+[2025-07-14 06:39:38] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:38] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:38] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:38] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:38] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:38] [no-session] POST[interval]: 10
+[2025-07-14 06:39:38] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:38] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:38] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:38] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:48] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:48] [no-session] SERVER変数:
+[2025-07-14 06:39:48] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:48] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:48] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:48] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:48] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:48] [no-session] POST[interval]: 10
+[2025-07-14 06:39:48] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:48] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:48] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:48] [no-session] POST[has_focus]: true
+[2025-07-14 06:39:58] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:39:58] [no-session] SERVER変数:
+[2025-07-14 06:39:58] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:39:58] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:39:58] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:39:58] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:39:58] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:39:58] [no-session] POST[interval]: 10
+[2025-07-14 06:39:58] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:39:58] [no-session] POST[action]: heartbeat
+[2025-07-14 06:39:58] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:39:58] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:08] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:08] [no-session] SERVER変数:
+[2025-07-14 06:40:08] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:08] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:40:08] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:08] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:40:08] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:40:08] [no-session] POST[interval]: 10
+[2025-07-14 06:40:08] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:08] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:08] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:40:08] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:18] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:18] [no-session] SERVER変数:
+[2025-07-14 06:40:18] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:18] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:40:18] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:18] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:40:18] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:40:18] [no-session] POST[interval]: 10
+[2025-07-14 06:40:18] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:18] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:18] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:40:18] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:18] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:18] [no-session] SERVER変数:
+[2025-07-14 06:40:18] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:18] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:40:18] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:18] [no-session] CONTENT_LENGTH: 113
+[2025-07-14 06:40:18] [no-session] POST[action]: acf/fields/post_object/query
+[2025-07-14 06:40:18] [no-session] POST[s]: 
+[2025-07-14 06:40:18] [no-session] POST[paged]: 1
+[2025-07-14 06:40:18] [no-session] POST[field_key]: field_6821780496853
+[2025-07-14 06:40:18] [no-session] POST[nonce]: 3d1ed442f3
+[2025-07-14 06:40:18] [no-session] POST[post_id]: 17553
+[2025-07-14 06:40:22] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:22] [no-session] SERVER変数:
+[2025-07-14 06:40:22] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:22] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:40:22] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:22] [no-session] CONTENT_LENGTH: 188
+[2025-07-14 06:40:22] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [post_id] => 12206
+            [lock] => 1752475164:1
+        )
+
+)
+
+[2025-07-14 06:40:22] [no-session] POST[interval]: 10
+[2025-07-14 06:40:22] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:22] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:22] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:40:22] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:25] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:25] [no-session] SERVER変数:
+[2025-07-14 06:40:25] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:25] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=12206&action=edit&classic-editor
+[2025-07-14 06:40:25] [no-session] CONTENT_TYPE: multipart/form-data; boundary=----WebKitFormBoundaryNVx2fczYIUrVyuPX
+[2025-07-14 06:40:25] [no-session] CONTENT_LENGTH: 475
+[2025-07-14 06:40:25] [no-session] POST[action]: wp-remove-post-lock
+[2025-07-14 06:40:25] [no-session] POST[_wpnonce]: 23e67d2ac6
+[2025-07-14 06:40:25] [no-session] POST[post_ID]: 12206
+[2025-07-14 06:40:25] [no-session] POST[active_post_lock]: 1752475222:1
+[2025-07-14 06:40:25] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:25] [no-session] SERVER変数:
+[2025-07-14 06:40:25] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:25] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:40:25] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:25] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:40:25] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:40:25] [no-session] POST[interval]: 10
+[2025-07-14 06:40:25] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:25] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:25] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:40:26] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:29] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:29] [no-session] SERVER変数:
+[2025-07-14 06:40:29] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:29] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/post.php?post=17553&action=edit&classic-editor
+[2025-07-14 06:40:29] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:29] [no-session] CONTENT_LENGTH: 189
+[2025-07-14 06:40:29] [no-session] POST[data]: Array
+(
+    [wp-refresh-post-lock] => Array
+        (
+            [lock] => 1752475117:1
+            [post_id] => 17553
+        )
+
+)
+
+[2025-07-14 06:40:29] [no-session] POST[interval]: 10
+[2025-07-14 06:40:29] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:29] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:29] [no-session] POST[screen_id]: case_study
+[2025-07-14 06:40:29] [no-session] POST[has_focus]: false
+[2025-07-14 06:40:35] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:35] [no-session] SERVER変数:
+[2025-07-14 06:40:35] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:35] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:40:35] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:35] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:40:35] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:40:35] [no-session] POST[interval]: 10
+[2025-07-14 06:40:35] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:35] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:35] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:40:35] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:45] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:45] [no-session] SERVER変数:
+[2025-07-14 06:40:45] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:45] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:40:45] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:45] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:40:45] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:40:45] [no-session] POST[interval]: 10
+[2025-07-14 06:40:45] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:45] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:45] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:40:45] [no-session] POST[has_focus]: true
+[2025-07-14 06:40:55] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:40:55] [no-session] SERVER変数:
+[2025-07-14 06:40:55] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:40:55] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:40:55] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:40:55] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:40:55] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:40:55] [no-session] POST[interval]: 10
+[2025-07-14 06:40:55] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:40:55] [no-session] POST[action]: heartbeat
+[2025-07-14 06:40:55] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:40:55] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:05] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:05] [no-session] SERVER変数:
+[2025-07-14 06:41:05] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:05] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:05] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:05] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:05] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:05] [no-session] POST[interval]: 10
+[2025-07-14 06:41:05] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:05] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:05] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:05] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:15] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:15] [no-session] SERVER変数:
+[2025-07-14 06:41:15] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:15] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:15] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:15] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:15] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:15] [no-session] POST[interval]: 10
+[2025-07-14 06:41:15] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:15] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:15] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:15] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:25] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:25] [no-session] SERVER変数:
+[2025-07-14 06:41:25] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:25] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:25] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:25] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:25] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:25] [no-session] POST[interval]: 10
+[2025-07-14 06:41:25] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:25] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:25] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:25] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:35] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:35] [no-session] SERVER変数:
+[2025-07-14 06:41:35] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:35] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:35] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:35] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:35] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:35] [no-session] POST[interval]: 10
+[2025-07-14 06:41:35] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:35] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:35] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:35] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:45] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:45] [no-session] SERVER変数:
+[2025-07-14 06:41:45] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:45] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:45] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:45] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:45] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:45] [no-session] POST[interval]: 10
+[2025-07-14 06:41:45] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:45] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:45] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:45] [no-session] POST[has_focus]: true
+[2025-07-14 06:41:55] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:41:55] [no-session] SERVER変数:
+[2025-07-14 06:41:55] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:41:55] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:41:55] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:41:55] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:41:55] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:41:55] [no-session] POST[interval]: 10
+[2025-07-14 06:41:55] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:41:55] [no-session] POST[action]: heartbeat
+[2025-07-14 06:41:55] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:41:55] [no-session] POST[has_focus]: true
+[2025-07-14 06:42:05] [no-session] === POST リクエスト詳細 ===
+[2025-07-14 06:42:05] [no-session] SERVER変数:
+[2025-07-14 06:42:05] [no-session] REQUEST_URI: /wp-admin/admin-ajax.php
+[2025-07-14 06:42:05] [no-session] HTTP_REFERER: http://localhost:3000/wp-admin/edit.php?post_type=author
+[2025-07-14 06:42:05] [no-session] CONTENT_TYPE: application/x-www-form-urlencoded; charset=UTF-8
+[2025-07-14 06:42:05] [no-session] CONTENT_LENGTH: 132
+[2025-07-14 06:42:05] [no-session] POST[data]: Array
+(
+    [wp-check-locked-posts] => Array
+        (
+            [0] => post-17540
+        )
+
+)
+
+[2025-07-14 06:42:05] [no-session] POST[interval]: 10
+[2025-07-14 06:42:05] [no-session] POST[_nonce]: ff84286ccd
+[2025-07-14 06:42:05] [no-session] POST[action]: heartbeat
+[2025-07-14 06:42:05] [no-session] POST[screen_id]: edit-author
+[2025-07-14 06:42:05] [no-session] POST[has_focus]: true

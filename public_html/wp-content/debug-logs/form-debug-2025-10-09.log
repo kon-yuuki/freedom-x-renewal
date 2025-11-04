@@ -1,0 +1,1964 @@
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理開始 ----------
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] リクエストURL: /materials/materials-5922/confirm
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] リクエスト方法: POST
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] REQUEST_METHOD: POST
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] QUERY_STRING: 
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] PATH_INFO: なし
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] パースされたURL:
+Array
+(
+    [path] => /materials/materials-5922/confirm
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5922/confirm
+    [投稿ID] => 7888
+    [投稿スラグ] => materials-5922
+    [フォームモード] => confirm
+    [クエリ変数] => Array
+        (
+            [name] => materials-5922
+            [materials] => materials-5922
+            [post_type] => materials
+            [form_mode] => confirm
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5922
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+    [form] => Array
+        (
+            [company] => Array
+                (
+                    [label] => 法人名
+                    [value] => 
+                    [output] => 
+                )
+
+            [department] => Array
+                (
+                    [label] => 所属部署名
+                    [value] => 
+                    [output] => 
+                )
+
+            [position] => Array
+                (
+                    [label] => 役職
+                    [value] => manager
+                    [output] => 管理職
+                )
+
+            [name] => Array
+                (
+                    [label] => 担当者名
+                    [value] => こんゆうき
+                    [output] => こんゆうき
+                )
+
+            [email] => Array
+                (
+                    [label] => 会社用メールアドレス
+                    [value] => etll.1b.yyy@icloud.com
+                    [output] => etll.1b.yyy@icloud.com
+                )
+
+            [phone] => Array
+                (
+                    [label] => 電話番号
+                    [value] => 09030146237
+                    [output] => 09030146237
+                )
+
+            [message] => Array
+                (
+                    [label] => ご質問・ご要望など
+                    [value] => aaaa
+                    [output] => aaaa
+                )
+
+            [privacy-agree] => Array
+                (
+                    [label] => 個人情報の取り扱い
+                    [value] => agree
+                    [output] => agree
+                )
+
+            [notice-agree] => Array
+                (
+                    [label] => ご注意
+                    [value] => agree
+                    [output] => agree
+                )
+
+        )
+
+    [form_token] => 60b5b25c242e8c8f59ea7163290dd97d
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータ:
+Array
+(
+    [company] => 
+    [department] => 
+    [position] => manager
+    [name] => こんゆうき
+    [email] => etll.1b.yyy@icloud.com
+    [phone] => 09030146237
+    [message] => aaaa
+    [privacy-agree] => agree
+    [notice-agree] => agree
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982566$j53$l0$h0
+    [_clsk] => wbizcw^1759982568274^40^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: confirm
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、強制的にconfirmモードに設定
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5922
+    [フォームパス] => /materials/materials-5922
+)
+
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] 確認画面を表示します
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] 確認画面の処理が完了しました
+[2025-10-09 04:02:58] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理開始 ----------
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] リクエストURL: /materials/materials-5922/complete
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] リクエスト方法: GET
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] REQUEST_METHOD: GET
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] QUERY_STRING: 
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] PATH_INFO: なし
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] パースされたURL:
+Array
+(
+    [path] => /materials/materials-5922/complete
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5922/complete
+    [投稿ID] => 7888
+    [投稿スラグ] => materials-5922
+    [フォームモード] => complete
+    [クエリ変数] => Array
+        (
+            [materials] => materials-5922
+            [post_type] => materials
+            [name] => materials-5922
+            [form_mode] => complete
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5922
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+    [form] => Array
+        (
+            [company] => Array
+                (
+                    [label] => 法人名
+                    [value] => 
+                    [output] => 
+                )
+
+            [department] => Array
+                (
+                    [label] => 所属部署名
+                    [value] => 
+                    [output] => 
+                )
+
+            [position] => Array
+                (
+                    [label] => 役職
+                    [value] => manager
+                    [output] => 管理職
+                )
+
+            [name] => Array
+                (
+                    [label] => 担当者名
+                    [value] => こんゆうき
+                    [output] => こんゆうき
+                )
+
+            [email] => Array
+                (
+                    [label] => 会社用メールアドレス
+                    [value] => etll.1b.yyy@icloud.com
+                    [output] => etll.1b.yyy@icloud.com
+                )
+
+            [phone] => Array
+                (
+                    [label] => 電話番号
+                    [value] => 09030146237
+                    [output] => 09030146237
+                )
+
+            [message] => Array
+                (
+                    [label] => ご質問・ご要望など
+                    [value] => aaaa
+                    [output] => aaaa
+                )
+
+            [privacy-agree] => Array
+                (
+                    [label] => 個人情報の取り扱い
+                    [value] => agree
+                    [output] => agree
+                )
+
+            [notice-agree] => Array
+                (
+                    [label] => ご注意
+                    [value] => agree
+                    [output] => agree
+                )
+
+        )
+
+    [form_token] => 60b5b25c242e8c8f59ea7163290dd97d
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982579$j40$l0$h0
+    [_clsk] => wbizcw^1759982579703^41^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: complete
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5922
+    [フォームパス] => /materials/materials-5922
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] 完了画面を表示します
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] メール送信処理を開始
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] ダウンロードURL: http://localhost:3002/wp-content/uploads/2024/01/住宅産業研究所_住宅業界のDX最前線2022_ランディ特別編集号_2024.pdf
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] ACFメールヘッダー存在: なし
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] デバッグモード: 管理者メール送信をスキップ
+Array
+(
+    [To] => Array
+        (
+            [0] => info@quoitworks.com
+        )
+
+    [Subject] => 【タテテク(DX・業務効率化関連)】資料ダウンロードを受け付けました。
+    [Body] => 以下の方から【タテテク(DX・業務効率化関連)】の資料ダウンロードを受け付けました。
+
+-------------------------------------------------
+
+【法人名】
+
+
+【所属部署名】
+
+
+【役職】
+管理職
+
+【担当者名】
+こんゆうき
+
+【会社用メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【ご質問・ご要望など】
+aaaa
+
+【個人情報の取り扱い】
+同意する
+
+【ご注意】
+同意する
+
+-------------------------------------------------
+
+
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] ユーザーメールヘッダー: デフォルトのhead.txtを使用
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] デバッグモード: ユーザーメール送信をスキップ
+Array
+(
+    [To] => etll.1b.yyy@icloud.com
+    [Subject] => 【FREEDOM X】資料ダウンロードのご請求ありがとうございます。
+    [Body] => デフォルトテンプレートです。
+
+-------------------------------------------------
+
+【法人名】
+
+
+【所属部署名】
+
+
+【役職】
+管理職
+
+【担当者名】
+こんゆうき
+
+【会社用メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【ご質問・ご要望など】
+aaaa
+
+【個人情報の取り扱い】
+同意する
+
+【ご注意】
+同意する
+
+-------------------------------------------------
+
+━━━━━━━━━━━━━━━━
+FREEDOM X株式会社
+〒103-0006
+東京都中央区日本橋富沢町11-12
+サンライズビル8階
+https://freedom-x.co.jp/
+━━━━━━━━━━━━━━━━
+※弊社からの最新情報のご案内が不要な場合には、こちらより配信停止をお願いします。
+)
+
+[2025-10-09 04:03:03] [60b5b25c242e8c8f59ea7163290dd97d] メール送信成功または、デバッグモードのためスキップ。完了画面を表示
+[2025-10-09 04:03:03] [no-session] 完了画面の処理が完了しました
+[2025-10-09 04:03:03] [no-session] ---------- フォーム処理終了 ----------
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理開始 ----------
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] リクエストURL: /materials/materials-5920
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] リクエスト方法: GET
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] REQUEST_METHOD: GET
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] QUERY_STRING: 
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] PATH_INFO: なし
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] パースされたURL:
+Array
+(
+    [path] => /materials/materials-5920
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5920
+    [投稿ID] => 7887
+    [投稿スラグ] => materials-5920
+    [フォームモード] => 
+    [クエリ変数] => Array
+        (
+            [page] => 0
+            [post_type] => materials
+            [materials] => materials-5920
+            [name] => materials-5920
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5920
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982607$j12$l0$h0
+    [_clsk] => wbizcw^1759982607922^43^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: 
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5920
+    [フォームパス] => /materials/materials-5920
+)
+
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面を表示します
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、またはリファラーあり: セッションを維持
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面の処理が完了しました
+[2025-10-09 04:03:29] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] パースされたURL:
+Array
+(
+    [path] => /materials/materials-5920
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5920
+    [投稿ID] => 7887
+    [投稿スラグ] => materials-5920
+    [フォームモード] => 
+    [クエリ変数] => Array
+        (
+            [page] => 0
+            [post_type] => materials
+            [materials] => materials-5920
+            [name] => materials-5920
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5920
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982609$j10$l0$h0
+    [_clsk] => wbizcw^1759982609919^44^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: 
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5920
+    [フォームパス] => /materials/materials-5920
+)
+
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面を表示します
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、またはリファラーあり: セッションを維持
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面の処理が完了しました
+[2025-10-09 04:04:26] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] パースされたURL:
+Array
+(
+    [path] => /materials/materials-5920
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5920
+    [投稿ID] => 7887
+    [投稿スラグ] => materials-5920
+    [フォームモード] => 
+    [クエリ変数] => Array
+        (
+            [page] => 0
+            [post_type] => materials
+            [materials] => materials-5920
+            [name] => materials-5920
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5920
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982666$j60$l0$h0
+    [_clsk] => wbizcw^1759982667425^45^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: 
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5920
+    [フォームパス] => /materials/materials-5920
+)
+
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面を表示します
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、またはリファラーあり: セッションを維持
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面の処理が完了しました
+[2025-10-09 04:04:28] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5920
+    [投稿ID] => 7887
+    [投稿スラグ] => materials-5920
+    [フォームモード] => 
+    [クエリ変数] => Array
+        (
+            [page] => 0
+            [post_type] => materials
+            [materials] => materials-5920
+            [name] => materials-5920
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5920
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982669$j57$l0$h0
+    [_clsk] => wbizcw^1759982669445^46^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: 
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5920
+    [フォームパス] => /materials/materials-5920
+)
+
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面を表示します
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、またはリファラーあり: セッションを維持
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面の処理が完了しました
+[2025-10-09 04:04:40] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] 詳細リクエスト情報:
+Array
+(
+    [リクエストURI] => /materials/materials-5920
+    [投稿ID] => 7887
+    [投稿スラグ] => materials-5920
+    [フォームモード] => 
+    [クエリ変数] => Array
+        (
+            [page] => 0
+            [post_type] => materials
+            [materials] => materials-5920
+            [name] => materials-5920
+            [error] => 
+            [m] => 
+            [p] => 0
+            [post_parent] => 
+            [subpost] => 
+            [subpost_id] => 
+            [attachment] => 
+            [attachment_id] => 0
+            [pagename] => materials-5920
+            [page_id] => 0
+            [second] => 
+            [minute] => 
+            [hour] => 
+            [day] => 0
+            [monthnum] => 0
+            [year] => 0
+            [w] => 0
+            [category_name] => 
+            [tag] => 
+            [cat] => 
+            [tag_id] => 
+            [author] => 
+            [author_name] => 
+            [feed] => 
+            [tb] => 
+            [paged] => 0
+            [meta_key] => 
+            [meta_value] => 
+            [preview] => 
+            [s] => 
+            [sentence] => 
+            [title] => 
+            [fields] => 
+            [menu_order] => 
+            [embed] => 
+            [category__in] => Array
+                (
+                )
+
+            [category__not_in] => Array
+                (
+                )
+
+            [category__and] => Array
+                (
+                )
+
+            [post__in] => Array
+                (
+                )
+
+            [post__not_in] => Array
+                (
+                )
+
+            [post_name__in] => Array
+                (
+                )
+
+            [tag__in] => Array
+                (
+                )
+
+            [tag__not_in] => Array
+                (
+                )
+
+            [tag__and] => Array
+                (
+                )
+
+            [tag_slug__in] => Array
+                (
+                )
+
+            [tag_slug__and] => Array
+                (
+                )
+
+            [post_parent__in] => Array
+                (
+                )
+
+            [post_parent__not_in] => Array
+                (
+                )
+
+            [author__in] => Array
+                (
+                )
+
+            [author__not_in] => Array
+                (
+                )
+
+            [search_columns] => Array
+                (
+                )
+
+            [ignore_sticky_posts] => 
+            [suppress_filters] => 
+            [cache_results] => 1
+            [update_post_term_cache] => 1
+            [update_menu_item_cache] => 
+            [lazy_load_term_meta] => 1
+            [update_post_meta_cache] => 1
+            [posts_per_page] => 1
+            [nopaging] => 
+            [comments_per_page] => 50
+            [no_found_rows] => 
+            [order] => DESC
+        )
+
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] リライトルール:
+Array
+(
+    [materials/([^/]+)/(confirm|complete)/?$] => index.php?materials=$matches[1]&form_mode=$matches[2]
+    [contact/(confirm|complete)/?$] => index.php?pagename=contact&form_mode=$matches[1]
+    [^landi/landi_area/([^0-9]+)] => index.php?posttype=landi_area&taxonomy_landi_area=$matches[1]
+    [landi/magazine/([^0-9]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine
+    [landi/magazine/([^0-9]+)/page/([^/]+)/?$] => index.php?taxonomy_magazine=$matches[1]&taxonomy=taxonomy_magazine&paged=$matches[2]
+    [news/page/([0-9]{1,})/?$] => index.php?post_type=news&paged=$matches[1]
+    [news/([^0-9]+)/?$] => index.php?posttype=news&taxonomy_news=$matches[1]
+    [news/([^0-9]+)/page/?([0-9]{1,})/?$] => index.php?posttype=news&taxonomy_news=$matches[1]&paged=$matches[2]
+    [news/?$] => index.php?post_type=news
+    [news/feed/(feed|rdf|rss|rss2|atom)/?$] => index.php?post_type=news&feed=$matches[1]
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] マッチしたリライトルール:
+Array
+(
+    [パターン] => (.?.+?)(?:/([0-9]+))?/?$
+    [リライト先] => index.php?pagename=$matches[1]&page=$matches[2]
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] セッションID: 60b5b25c242e8c8f59ea7163290dd97d
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] セッションデータ:
+Array
+(
+    [value] => 1
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータなし
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] Cookieデータ:
+Array
+(
+    [_ga] => GA1.1.1960639743.1742698288
+    [wp-settings-2] => libraryContent=browse
+    [wp-settings-time-2] => 1742700202
+    [_im_id_1014831] => abdd4d0ab0a3bcc5.1742703366.
+    [_uetvid] => 97dfa900b82611ef9a5115826e82b459
+    [_im_vid] => 01JQWJYHK52P57HG5B4A4BZG1T
+    [__td_signed] => true
+    [visitor_id391552] => 665005908
+    [visitor_id391552-hash] => 36458ad4b727b563c95f144fdc046f508ee2f0e6746c338c10124517297657d40ab33b7dda69728d996a2a416cfc3869067738cf
+    [wp-settings-time-46] => 1744684756
+    [_td] => 96aed3ba-ffa5-4a06-af2d-7ba822672332
+    [dc_cl_id] => YIhbHWAgGiFbyERg
+    [_ga_LHFQ3HVR23] => GS2.1.s1748236455$o34$g1$t1748237383$j60$l0$h0$dTBtcBr5sQ0kJOhuhJ5BbQlu7Kl_5fOkSVg
+    [_ga_FH7HFXM5YM] => GS2.1.s1748236455$o34$g1$t1748237383$j0$l0$h0
+    [_ga_VNZNPM3FLK] => GS2.1.s1748307313$o2$g1$t1748309349$j11$l0$h1620517015$d0MxmLeawe8VstRzoY43d-shAkuvCME29iw
+    [__gsas] => ID=55a138d7a3c44e94:T=1750723643:RT=1750723643:S=ALNI_MbUg96sp0EXzISjYrufShYXu4ZaIA
+    [_gcl_au] => 1.1.13237739.1752474854
+    [_ga_FE7EN9LJGZ] => GS2.1.s1753172349$o4$g1$t1753176611$j60$l0$h0
+    [_ga_LDYXXBNDRG] => GS2.1.s1753952179$o3$g1$t1753952911$j60$l0$h0
+    [wp-settings-1] => libraryContent=browse&editor=tinymce&mfold=o&posts_list_mode=excerpt
+    [wp-settings-time-1] => 1755845252
+    [_ga_QNX22F92KW] => GS2.1.s1756959412$o1$g1$t1756961194$j60$l0$h0
+    [_ga_DYV83VWK9M] => GS2.1.s1756959411$o1$g1$t1756961354$j60$l0$h0
+    [access_cookie] => access
+    [_gid] => GA1.1.1451864304.1759824396
+    [pma_lang] => ja
+    [phpMyAdmin] => 322aee6fb7a27fa7c51a15352c4b625c
+    [mw-wp-form-token] => 26a5abcb8d077b41c2a7875bffcefe03b01261b7000d2c9ae35b31582e833039
+    [_clck] => 1y6goel^2^g00^0^1908
+    [_im_ses_1014831] => 1
+    [PHPSESSID] => 60b5b25c242e8c8f59ea7163290dd97d
+    [_gat_UA-1606041-9] => 1
+    [_ga_KEGGXCNVVH] => GS2.1.s1759978834$o180$g1$t1759982708$j18$l0$h0
+    [_clsk] => wbizcw^1759982708934^50^1^s.clarity.ms/collect
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] フォームモード: 
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] フォーム設定:
+Array
+(
+    [FORM_KIND_DIR] => /var/www/html/wp-content/themes/landi_renewal/form/material
+    [スラグ] => materials-5920
+    [フォームパス] => /materials/materials-5920
+)
+
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] 必要なファイルを読み込みました
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面を表示します
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] POSTデータあり、またはリファラーあり: セッションを維持
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] 入力画面の処理が完了しました
+[2025-10-09 04:05:21] [60b5b25c242e8c8f59ea7163290dd97d] ---------- フォーム処理終了 ----------
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] メール送信処理を開始
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] ダウンロードURL: http://localhost:3002/wp-content/uploads/2024/03/（印刷推奨）ハンドブック_土地探しのコツ_202303.pdf
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] ACFメールヘッダー存在: なし
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] デバッグモード: 管理者メール送信をスキップ
+Array
+(
+    [To] => Array
+        (
+            [0] => info@quoitworks.com
+        )
+
+    [Subject] => 【ランディ（土地探し・用地取得関連)】資料ダウンロードを受け付けました。
+    [Body] => 以下の方から【ランディ（土地探し・用地取得関連)】の資料ダウンロードを受け付けました。
+
+-------------------------------------------------
+
+【法人名】
+
+
+【所属部署名】
+
+
+【役職】
+管理職
+
+【担当者名】
+こんゆうき
+
+【会社用メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【ご質問・ご要望など】
+ああああ
+
+【個人情報の取り扱い】
+同意する
+
+【ご注意】
+同意する
+
+-------------------------------------------------
+
+
+)
+
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] ユーザーメールヘッダー: デフォルトのhead.txtを使用
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] デバッグモード: ユーザーメール送信をスキップ
+Array
+(
+    [To] => etll.1b.yyy@icloud.com
+    [Subject] => 【FREEDOM X】資料ダウンロードのご請求ありがとうございます。
+    [Body] => デフォルトテンプレートです。
+
+-------------------------------------------------
+
+【法人名】
+
+
+【所属部署名】
+
+
+【役職】
+管理職
+
+【担当者名】
+こんゆうき
+
+【会社用メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【ご質問・ご要望など】
+ああああ
+
+【個人情報の取り扱い】
+同意する
+
+【ご注意】
+同意する
+
+-------------------------------------------------
+
+━━━━━━━━━━━━━━━━
+FREEDOM X株式会社
+〒103-0006
+東京都中央区日本橋富沢町11-12
+サンライズビル8階
+https://freedom-x.co.jp/
+━━━━━━━━━━━━━━━━
+※弊社からの最新情報のご案内が不要な場合には、こちらより配信停止をお願いします。
+)
+
+[2025-10-09 04:14:52] [c5701a1ab7d489270bf5284fc699d49d] メール送信成功または、デバッグモードのためスキップ。完了画面を表示
+[2025-10-09 04:20:36] [c5701a1ab7d489270bf5284fc699d49d] フォームトークンが無効: なし != c5701a1ab7d489270bf5284fc699d49d
+[2025-10-09 04:20:39] [c5701a1ab7d489270bf5284fc699d49d] フォームトークンが無効: なし != c5701a1ab7d489270bf5284fc699d49d
+[2025-10-09 04:20:41] [c5701a1ab7d489270bf5284fc699d49d] フォームトークンが無効: なし != c5701a1ab7d489270bf5284fc699d49d
+[2025-10-09 04:21:08] [9c819553dadae2dcd6e66ee3a7ef8c48] メール送信処理を開始
+[2025-10-09 04:21:08] [9c819553dadae2dcd6e66ee3a7ef8c48] デバッグモード: 管理者メール送信をスキップ
+Array
+(
+    [To] => Array
+        (
+            [0] => info@quoitworks.com
+        )
+
+    [Subject] => 【お問い合わせ】ウェブサイトからのお問い合わせがありました
+    [Body] => QUOITWORKSサイトから以下の通りお問い合わせを受け付けました。
+
+-------------------------------------------------
+
+【法人名】
+株式会社クオートワークス
+
+【問い合わせ種別】
+サービスについて
+
+【お名前】
+こんゆうき
+
+【メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【最初に弊社を知ったきっかけ】
+WEB記事、プレリリース
+
+【お問い合わせ詳細】
+ああああ
+
+【個人情報の取り扱い】
+同意する
+
+-------------------------------------------------
+
+
+)
+
+[2025-10-09 04:21:08] [9c819553dadae2dcd6e66ee3a7ef8c48] デバッグモード: ユーザーメール送信をスキップ
+Array
+(
+    [To] => etll.1b.yyy@icloud.com
+    [Subject] => お問い合わせを受け付けました
+    [Body] => 株式会社クオートワークス こんゆうき様
+
+この度は、お問い合わせいただきまして誠にありがとうございます。
+お問い合わせ内容を確認後、
+2～3営業日以内に、担当よりメールにて返信いたします。
+しばらくお待ち頂けますと、幸いです。
+
+-------------------------------------------------
+
+【法人名】
+株式会社クオートワークス
+
+【問い合わせ種別】
+サービスについて
+
+【お名前】
+こんゆうき
+
+【メールアドレス】
+etll.1b.yyy@icloud.com
+
+【電話番号】
+09030146237
+
+【最初に弊社を知ったきっかけ】
+WEB記事、プレリリース
+
+【お問い合わせ詳細】
+ああああ
+
+【個人情報の取り扱い】
+同意する
+
+-------------------------------------------------
+
+QUOITWORKS Inc. ／ 株式会社クオートワークス
+
+〒154-0001 
+東京都世田谷区池尻3丁目24ー18-101
+mail:
+info@quoitworks.com
+)
+
+[2025-10-09 04:21:08] [9c819553dadae2dcd6e66ee3a7ef8c48] メール送信成功または、デバッグモードのためスキップ。完了画面を表示
+[2025-10-09 04:21:10] [9c819553dadae2dcd6e66ee3a7ef8c48] フォームトークンが無効: なし != 9c819553dadae2dcd6e66ee3a7ef8c48

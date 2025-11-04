@@ -1,0 +1,37 @@
+@use "../../_foundation/global" as g;
+
+.p-privacy__col {
+  display: flex;
+  gap: 4rem;
+}
+
+.p-privacy__col--logo {
+  width: 18.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid g.$c-gray__1;
+  border-radius: 15px;
+
+  img {
+    width: 60%;
+  }
+}
+
+.p-privacy__col--txt {
+  width: calc(100% - 4rem - 18.5rem);
+}
+
+@media (max-width: 1023px) {
+  .p-privacy__col {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .p-privacy__col--logo {
+    width: 10rem;
+  }
+  .p-privacy__col--txt {
+    width: calc(100% - 10rem - 1.5rem);
+  }
+}

@@ -1,0 +1,187 @@
+@use "variables" as g;
+
+//ホバー
+@mixin hover {
+  @media (hover: hover) {
+    &:where(:any-link, :enabled, summary):hover {
+      @content;
+    }
+  }
+}
+
+//スクロールバーを非表示
+@mixin no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &-webkit-scrollbar {
+    display: none;
+  }
+}
+
+//グラデーションボーダー
+@mixin gradation-border-v {
+  background: linear-gradient(to Bottom, #e5e0e1, transparent);
+}
+@mixin gradation-border-h {
+  background: linear-gradient(to Right, #e5e0e1, transparent);
+}
+
+//行数で高さ制限
+@mixin line-clamp($lines: 2) {
+  max-height: #{$lines}lh;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+@mixin dotted-line-top(
+  $color: black,
+  $opacity: 0.3,
+  $dot-width: 25%,
+  $gap-width: 1%,
+  $size: 4px
+) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      $color 0%,
+      $color $dot-width,
+      transparent $dot-width + $gap-width
+    );
+    background-size: $size 1px;
+    background-repeat: repeat-x;
+    opacity: $opacity;
+  }
+}
+@mixin dotted-line-bottom(
+  $color: black,
+  $opacity: 0.3,
+  $dot-width: 25%,
+  $gap-width: 1%,
+  $size: 4px
+) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      $color 0%,
+      $color $dot-width,
+      transparent $dot-width + $gap-width
+    );
+    background-size: $size 1px;
+    background-repeat: repeat-x;
+    opacity: $opacity;
+  }
+}
+
+// 垂直方向の点線（左右位置を指定可能）
+@mixin dotted-line-side(
+  $position: right,
+  $color: black,
+  $opacity: 0.3,
+  $dot-height: 25%,
+  $gap-height: 1%,
+  $size: 4px
+) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    #{$position}: 0;
+    height: 100%;
+    width: 1px;
+    background-image: linear-gradient(
+      to bottom,
+      $color 0%,
+      $color $dot-height,
+      transparent $dot-height + $gap-height
+    );
+    background-size: 1px $size;
+    background-repeat: repeat-y;
+    opacity: $opacity;
+  }
+}
+
+@mixin dotted-bg($dot-color:#E8E9EC) {
+  background-image: radial-gradient(circle, $dot-color 1px, transparent 1px),
+    radial-gradient(circle, $dot-color 1px, transparent 1px);
+  background-size: 7px 7px;
+  background-position: 0 0, 3.5px 3.5px;
+}
+
+@mixin section-clip{
+   clip-path:polygon(0% 0%,100% 0%,100% calc(100% - 10rem),50% 100%,0% calc(100% - 10rem));
+}
+
+@mixin section-dot-separate{
+  &:after{
+    content:'';
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    @include dotted-bg($dot-color:#D3DFE2);
+    left:0;
+    pointer-events: none;
+    bottom:0;
+    mask-image: linear-gradient(to bottom,transparent 0%,black 50%);
+    z-index: -1;
+    opacity: .7;
+  }
+  &:before{
+    content:'';
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    background-color: #E1EEF0;
+    left:0;
+    bottom:0;
+    pointer-events: none;
+    opacity: .7;
+    mask-image: linear-gradient(to bottom,transparent 0%,black 50%);
+    z-index: -1;
+  }
+}
+
+//ハーフレディングの打ち消しと、line-heightの設定をまとめて行う
+@mixin setLh($lh){
+  line-height: $lh;
+  @include leadingTrim($lh);
+}
+
+//ハーフレディングを打ち消す
+@mixin leadingTrim($lh) {
+  &::before,
+  &::after {
+    content: '';
+    display: block flow;
+    inline-size: 0;
+    block-size: 1px; // marginが貫通しないようにする
+  }
+
+  // 前の要素との相殺を防ぐために::beforeに`margin-block-end`、::afterに`margin-block-start`を指定する
+  &::before {
+    margin-block-end: calc((1 - #{$lh}) * 0.5em);
+  }
+
+  &::after {
+    margin-block-start: calc((1 - #{$lh}) * 0.5em);
+  }
+}

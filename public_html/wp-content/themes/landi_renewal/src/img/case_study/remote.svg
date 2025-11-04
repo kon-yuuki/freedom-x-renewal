@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_8446" data-name="長方形 8446" width="120" height="120" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="illust_12相談" transform="translate(60 60)">
+    <g id="グループ_3148" data-name="グループ 3148" transform="translate(-60 -60)">
+      <rect id="長方形_8445" data-name="長方形 8445" width="69.6" height="41.67" transform="translate(25.2 41.22)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2.718"/>
+      <g id="グループ_3147" data-name="グループ 3147" clip-path="url(#clip-path)">
+        <path id="パス_12833" data-name="パス 12833" d="M37.88,60.2h71.04a4.38,4.38,0,0,1,4.38,4.38v42.36H33.5V64.58A4.38,4.38,0,0,1,37.88,60.2Z" transform="translate(-13.4 -24.08)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2.718"/>
+        <path id="パス_12834" data-name="パス 12834" d="M110.06,144.26H32.18a4.44,4.44,0,0,1-4.38-4.38V138.2h86.64v1.68a4.38,4.38,0,0,1-4.38,4.38Z" transform="translate(-11.12 -55.28)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2.718"/>
+        <circle id="楕円形_205" data-name="楕円形 205" cx="7.5" cy="7.5" r="7.5" transform="translate(52.5 48.36)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2.376"/>
+        <path id="パス_12835" data-name="パス 12835" d="M105.22,127.12V118a7.5,7.5,0,0,0-7.5-7.5H94.06l-4.5,8.46-4.5-8.46H81.4a7.5,7.5,0,0,0-7.5,7.5v9.12" transform="translate(-29.56 -44.2)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2.376"/>
+        <line id="線_545" data-name="線 545" y1="6.9" transform="translate(69.66 76.02)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.376"/>
+        <line id="線_546" data-name="線 546" y1="6.9" transform="translate(50.34 76.02)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.376"/>
+      </g>
+    </g>
+  </g>
+</svg>

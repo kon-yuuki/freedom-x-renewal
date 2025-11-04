@@ -1,0 +1,277 @@
+@use "../../_foundation/global" as g;
+
+.p-company-fv {
+  color: white;
+  padding-bottom: 6rem;
+}
+
+.js-companyGallerySlider {
+  pointer-events: none;
+}
+
+.p-company {
+  padding-bottom: var(--content-bottom-padding);
+
+  .c-bg-blue {
+    color: white;
+  }
+
+  .p-top-philosophy__gallery {
+    &.bottom {
+      bottom: -45rem;
+    }
+    &.second {
+      top: -10rem;
+    }
+  }
+}
+
+.p-company-philosophy {
+  padding-top: 10rem;
+
+  .c-ttl__h2 {
+    margin-bottom: 17rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .p-top-philosophy__txt {
+    font-size: 1.6rem;
+  }
+
+  .p-top-philosophy__copy--inner {
+    font-size: 4.6rem;
+    translate: 7rem 0;
+  }
+
+  .p-top-philosophy__copy {
+    margin-bottom: 5.4rem;
+  }
+  .p-top-philosophy__content {
+    margin-left: calc(50vw - 10rem);
+  }
+
+  .p-top-philosophy__gallery{
+    --delay:calc(var(--base-duration) / -1.5);
+    
+    &.second{
+      --delay:calc(var(--base-duration) / -7);
+    }
+    &.bottom{
+      bottom:-33rem;
+      --delay:calc(var(--base-duration) / -3);
+    }
+  }
+}
+
+.p-company-message {
+  padding-top: 15rem;
+  font-size: 1.6rem;
+  padding-bottom: 15rem;
+}
+
+.p-company-message__main {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+}
+
+.p-company-message__image {
+  width: 33rem;
+  aspect-ratio: 1/1;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.p-company-message__txt {
+  max-width: calc(100% - 6rem - 33rem);
+  line-height: 1.7;
+}
+
+.p-company-message__profile {
+  margin-top: 27.6rem;
+  text-align: right;
+  line-height: 1.7;
+}
+
+.p-company-message__img {
+  border-radius: 20px;
+}
+
+.p-company-group {
+}
+
+.p-company-group__main {
+  border: 1px solid g.$c-gray__1;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  margin-bottom: 6rem;
+}
+
+.p-company-group__content {
+  --gap: 4rem;
+
+  .img-ov {
+    border-radius: 20px;
+    border: 1px solid g.$c-gray__1;
+    margin-bottom: 1.7rem;
+  }
+}
+
+.p-company-group__ttl {
+  font-size: 1.6rem;
+  font-family: g.$font-bold;
+  margin-bottom: 1.4rem;
+}
+
+.p-company-group__txt {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.p-company-outline__certification {
+  display: flex;
+  gap: 4rem;
+}
+
+.p-company-outline__certification--image {
+  width: 12.2rem;
+}
+
+.p-company-location__main {
+  --gap: 4rem;
+  row-gap: 5.3rem;
+
+  .img-ov {
+    border-radius: 20px;
+    border: 1px solid g.$c-gray__2;
+    margin-bottom: 1.7rem;
+  }
+}
+
+.p-company-location__ttl {
+  font-size: 1.6rem;
+  font-family: g.$font-bold;
+  margin-bottom: 1.5rem;
+}
+
+.p-company-location__address {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+
+@media(max-width:1023px){
+
+  .p-company-fv{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  .p-company-philosophy{
+    padding-top: 4rem;
+
+    .c-ttl__h2{
+      margin-bottom: 11.6rem;
+    }
+
+    .p-top-philosophy__txt{
+      line-height: 1.8;
+    }
+
+    .p-top-philosophy__copy{
+      padding-inline:1.5rem;
+      margin-bottom: 2.4rem;
+    }
+    
+    .p-top-philosophy__copy--inner{
+      translate:0 0;
+      font-size: 3rem;
+    }
+
+    .p-top-philosophy__content{
+      padding-inline:1.5rem;
+      margin-left: 0;
+    }
+    .p-top-philosophy__txt{
+      font-size: 1.4rem;
+    }
+  }
+  .p-company-message{
+    padding-top: 0;
+    padding-bottom: 5.2rem;
+  }
+  .p-company-message__main{
+    flex-direction: column;
+    gap:2.3rem;
+  }
+  .p-company-message__image{
+    width: 100%;
+    order:1;
+    aspect-ratio: 345/227;
+
+    img{
+      border-radius: 10px;
+    }
+  }
+  .p-company-outline__certification--txt--ttl{
+    font-family: g.$font-bold;
+  }
+  .p-company-outline__certification{
+    gap:1rem;
+  }
+  .p-company-message__profile{
+    margin-top: 0;
+    order:3;
+    font-size: 1.4rem;
+  }
+  .p-company-message__txt{
+    max-width: 100%;
+    order:2;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .p-company-group__content.col3{
+    --col:1;
+    --gap:3.2rem;
+
+    .img-ov{
+      border-radius: 1rem;
+    }
+  }
+
+  .p-company-group__main{
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+  }
+  .p-company-group__txt{
+    font-size: 1.2rem;
+  }
+
+  .c-breadNav.white{
+    color:inherit;
+  }
+  .p-company-location__main{
+    &.col3{
+      --col:2;
+      --gap:2rem;
+      row-gap:3rem;
+    }
+    .img-ov{
+      border-radius: 10px;
+          margin-bottom: 1.5rem;
+    }
+  }
+  .p-company-location__ttl{
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .p-company-location__address{
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}

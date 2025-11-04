@@ -1,0 +1,107 @@
+@use "../_foundation/global" as g;
+
+.l-fv {
+  padding-top: calc(var(--header-height) + 13rem);
+  padding-inline:5rem;
+  box-sizing: border-box;
+  margin-bottom: 4.7rem;
+  
+  &.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+  }
+}
+
+.l-fv__txt{
+    text-align: right;
+    opacity: .5;
+    line-height: 1.6;
+    font-size:1.2rem;
+    padding-bottom: .8rem;
+}
+
+.l-fv__heading--sub {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.l-fv__heading--main {
+  font-size: 4.2rem;
+  font-family: g.$font-bold;
+  line-height: 1.26;
+
+  &.big{
+    font-size: 5.8rem;
+  }
+}
+
+.l-fv__lead{
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  opacity: .5;
+  line-height: 1.7;
+
+  &:has(+ .l-fv__kv){
+    margin-bottom: 2.5rem;
+  }
+
+  &.tint{
+    opacity: 1;
+    font-size: 1.4rem;
+  }
+}
+
+.l-fv__kv{
+  border-radius: 20px;
+  overflow: clip;
+}
+
+.l-fv__post{
+  display: flex;
+  align-items: center;
+  margin-top: 2.8rem;
+  gap:1.6rem;
+
+  .c-cat-list__link{
+    font-family: g.$font-bold;
+    font-size: 1.2rem;
+  }
+}
+
+.l-fv__post--date{
+  font-size: 1.2rem;
+}
+
+@media(max-width:1023px){
+  .l-fv{
+    padding-inline:1.5rem;
+    padding-top:6rem;
+    margin-bottom: 4.4rem;
+
+    .p-company-fv &{
+      margin-bottom: 5rem;
+    }
+
+    &.flex{
+      margin-bottom: 4rem;
+    }
+  }
+  .l-fv__heading--main{
+    font-size: 2.3rem;
+
+    &.big{
+      font-size: 3rem;
+    }
+  }
+  .l-fv__heading--sub{
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  .l-fv__post{
+    margin-top: 1.2rem;
+    gap:1rem;
+    flex-wrap: wrap;
+  }
+}

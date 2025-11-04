@@ -1,0 +1,235 @@
+@use "../../_foundation/global" as g;
+
+.p-contact {
+  --grid-gap: 0;
+  display: flex;
+  padding-inline: 5rem;
+}
+
+p.p-contact__lead {
+  line-height: 1.75;
+  font-size: 1.4rem;
+}
+
+.p-contact__consultant {
+  --gap: 1.5rem;
+  .c-col__item {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+p.p-contact__ttl {
+  font-family: g.$font-bold;
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.p-contact__casestudy {
+  border: 1px solid #dadfe0;
+  border-radius: 20px;
+  padding: 3.6rem 2.2rem 2.5rem 4rem;
+}
+
+.p-contact__col {
+  width: 50%;
+  &:nth-of-type(1) {
+    padding-right: 6rem;
+  }
+  &:nth-of-type(2) {
+    padding-left: 6rem;
+    position: relative;
+    @include g.dotted-line-side($position: left, $opacity: 0.3);
+  }
+}
+
+//確認画面
+.p-contact-confirm {
+  .c-mainWrapper {
+    max-width: 70rem;
+    width: 70rem;
+    margin-inline: auto;
+  }
+
+  .form-item {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .form-ttl {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .form-content {
+    font-size: 1.8rem;
+    font-family: g.$font-bold;
+  }
+  .p-contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+    align-items: flex-start;
+  }
+  .fix-form {
+    width: 32%;
+  }
+  .c-btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .c-btn__inner {
+      justify-content: center;
+    }
+
+    &:not(.fix) {
+      height: 12rem;
+    }
+
+    &.fix {
+      width: 100%;
+      .c-btn__inner {
+        flex-direction: row-reverse;
+      }
+      .c-btn__icon {
+        rotate: 180deg;
+      }
+    }
+
+    &.js-contactBtn {
+      width: 67%;
+    }
+  }
+}
+
+.p-contact-complete {
+  line-height: 1.8;
+  .c-mainWrapper {
+    max-width: 70rem;
+    width: 70rem;
+    margin-inline: auto;
+  }
+  .c-btn-wrapper {
+    margin-top: 4rem;
+  }
+}
+
+.p-contact-confirm__lead {
+  font-size: 1.6rem;
+  margin-bottom: 5.5rem;
+  line-height: 1.8;
+}
+
+//完了画面
+.p-contact-complete {
+  .c-mainWrapper {
+    max-width: 70rem;
+    width: 70rem;
+    margin-inline: auto;
+  }
+}
+.p-contact-complete__lead {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1023px) {
+  .p-contact {
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    gap: 2.9rem;
+  }
+  .p-contact__col {
+    padding-right: 0;
+    width: 100%;
+
+    &:nth-of-type(1) {
+      padding-right: 0;
+      padding-bottom: 4rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -1.5rem;
+        width: calc(100% + 3rem);
+        height: 1px;
+        background-color: g.$c-gray__2;
+      }
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+  p.p-contact__lead {
+    font-size: 1.2rem;
+  }
+  p.p-contact__ttl {
+    margin-top: 2rem;
+  }
+  .p-contact__casestudy {
+    border-radius: 15px;
+    padding: 2.2rem 1.5rem 2.3rem 2.4rem;
+    margin-bottom: 4rem;
+  }
+  .p-contact__consultant {
+    --gap: 1rem;
+  }
+
+  .p-contact-confirm,
+  .p-contact-complete {
+    .c-mainWrapper {
+      width: 100%;
+      padding-inline: 1.5rem;
+    }
+    .p-contact-form {
+      position: relative;
+      padding-top: 3rem;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1.5rem;
+        width: calc(100% + 3rem);
+        height: 0.5px;
+        background-color: g.$c-gray__2;
+      }
+    }
+  }
+  .p-contact-confirm__lead {
+    margin-bottom: 3.5rem;
+    font-size: 1.2rem;
+  }
+  .p-contact-confirm {
+    .form-ttl {
+      font-size: 1rem;
+    }
+    .form-content {
+      font-size: 1.6rem;
+    }
+    .form-item {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    .p-contact-bottom {
+      margin-top: 6rem;
+    }
+
+    .c-btn {
+      &:not(.fix) {
+        height: 7rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

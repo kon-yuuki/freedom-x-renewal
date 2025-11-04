@@ -1,0 +1,102 @@
+
+<?php
+// タクソノミーの情報を取得
+$queried_object = get_queried_object();
+
+// IDを取得
+$term_id = $queried_object->term_id;
+// 名前を取得
+$term_name = $queried_object->term_name;
+?>
+	<div id="wrap">
+
+		<div class="ttl_subpage_01 animation" style="background-image: url('<?php echo get_img_dir('title_store.jpg');?>');"></div>
+
+		<article>
+
+			<ul class="Breadcrumb">
+			<li><a href="<?php echo esc_url(home_url("/")); ?>">ランディ</a></li>
+			<li><a href="<?php echo esc_url(home_url("/service")); ?>">サービス</a></li>
+			<li><a href="<?php echo esc_url(home_url("/landi")); ?>">ランディ</a></li>
+			<li><a href="<?php echo esc_url(home_url("/landi/landi_area")); ?>">都道府県選択</a></li>
+				<li>ランディPRO導入店一覧</li>
+			</ul>
+
+
+			<section class="animation">
+				<h2 class="sect_ttl_03">
+					<em>ランディ導入店一覧</em>
+				</h2>
+				<p>ランディを導入しているハウスメーカー・工務店をご紹介します。<br />希望のハウスメーカー・工務店のホームぺージよりご予約のうえ、各社にご来店ください。</p>
+
+				<div class="stores">
+					<div class="stores_inner">
+					<?php
+
+
+					$args   = array(
+							'posts_per_page' => 2000, 	// 表示する件数
+							'tax_query' => [
+								[
+									'taxonomy' => 'taxonomy_landi_area',
+									'field' => 'slug',
+									'terms' =>  $queried_object->slug,
+								],
+							],
+						'post_type' => 'landi_area', // 取得する投稿タイプのスラッグ
+						'orderby' => 'date', //日付で並び替え
+						'order' => 'DESC', // 降順 or 昇順
+					);
+
+					$query = new WP_Query($args);
+
+					if ($query->have_posts()) :
+							foreach ($query->posts as $post) :
+
+							// カスタムフィールドの情報を取得
+							$post_meta = get_post_custom();
+
+							if ($post_meta["landi_area_img"][0]) {
+							// ロゴ画像
+									$meta_landi_area_img = wp_get_attachment_image_src($post_meta["landi_area_img"][0], 'full');
+									$landi_area_img = $meta_landi_area_img[0];
+							}
+							// 会社名
+							$landi_area_company_name = $post_meta["landi_area_company_name"][0];
+
+							// 展示場名
+							$landi_area_space_name = $post_meta["landi_area_space_name"][0];
+
+							// ホームページURL
+							$landi_area_url = $post_meta["landi_area_url"][0];
+
+							// タームの取得
+							$terms = get_the_terms($post->ID, 'taxonomy_landi_area');
+
+					?>
+						<div class="item">
+
+							<figure>
+								<?php if(isset($landi_area_img)) :?>
+									<img src="<?php echo $landi_area_img;?>" alt="<?php the_title(); ?>">
+								<?php endif; ?>
+							</figure>
+							<h3><?php echo $landi_area_company_name; ?></h3>
+							<?php if($landi_area_space_name) :?>
+							<p><?php echo $landi_area_space_name; ?></p>
+							<?php endif; ?>
+							<a href="<?php echo $landi_area_url; ?>" class="btn" target="_blank">お問い合わせはこちら</a>
+						</div>
+						<?php endforeach; wp_reset_postdata(); ?>
+				<?php endif; ?>
+					</div>
+
+					<a href="<?php echo esc_url(home_url("/landi/landi_area")); ?>" class="red_btn_large long"><span>都道府県を選び直す</span></a>
+				</div>
+
+			</section>
+
+		</article>
+
+	</div><!-- wrap -->
+

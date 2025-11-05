@@ -5,7 +5,7 @@ Template Name:タテテク
 global $util;
 $pageinfo = array(
   'page_id' => 'case',
-  'navigation' => 'service renewal',
+  'navigation' => 'service renewal tateteku',
   'title' => '建築・不動産領域におけるDXコンサルティング｜FREEDOM X株式会社',
   'description' => 'FreedomXは、建築・不動産領域の知的生産性に革命をもたらします。当社は、実績に裏付けされた知見とテクノロジーの力で人材の能力を底上げし、経験が浅い人でも無駄なく最短で正解に辿り着ける未来を目指します。'
 );
@@ -77,14 +77,18 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
   <div class=" splide js-serviceFooterSlider">
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 "><img
-            src="<?php echo $img_path ?>service/tateteku/slider_1.webp" alt="" loading="lazy"></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/tateteku/slider_1.webp" alt="" loading="lazy">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
             src="<?php echo $img_path ?>service/tateteku/slider_2.webp" alt="" loading="lazy"></li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
             src="<?php echo $img_path ?>service/tateteku/slider_3.webp" alt="" loading="lazy"></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
-            src="<?php echo $img_path ?>service/tateteku/slider_4.webp" alt="" loading="lazy"></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/tateteku/slider_4.webp" alt="" loading="lazy">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
             src="<?php echo $img_path ?>service/tateteku/slider_5.webp" alt="" loading="lazy"></li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
@@ -96,12 +100,12 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 </section>
 
 <main class="p-service-detail p-service-tateteku">
-  <section class="p-service-detail__section p-service-detail__trouble">
+  <section class="p-service-detail__section p-service-detail__trouble  p-service-detail__trouble--1">
     <div class="p-service-detail__section-inner">
       <h2 class="p-service-detail__section-title center">
         <span class="p-service-detail__section-title-small">ハウスメーカー・工務店の</span><br>
-        <span class="p-service-detail__section-title-large">よくある<strong class="u-txt-red">
-            3つのお悩み</strong></span>
+        <span class="p-service-detail__section-title-large"><strong
+            class="u-txt-red">プラン提案</strong>に関する<br>よくある住宅検討者の声</span>
       </h2>
 
       <picture class="p-service-detail__trouble-image">
@@ -113,7 +117,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 
       <div class="p-service-detail__trouble-card-list c-col col3">
         <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題01</p>
+          <p class="p-service-detail__trouble-card-label">01</p>
           <h3 class="p-service-detail__trouble-card-title">
             人口の減少により<br>
             他社との<span class="p-service-detail__trouble-card-title-accent">競争が</span><br>
@@ -133,7 +137,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
         </div>
 
         <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題02</p>
+          <p class="p-service-detail__trouble-card-label">02</p>
           <h3 class="p-service-detail__trouble-card-title">
             住宅展示場の<br>
             来場者数が<span class="p-service-detail__trouble-card-title-accent">減少</span>し、<br>
@@ -155,7 +159,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
         </div>
 
         <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題03</p>
+          <p class="p-service-detail__trouble-card-label">03</p>
           <h3 class="p-service-detail__trouble-card-title">
             自社分譲地の仕入れは<br>
             <span class="p-service-detail__trouble-card-title-accent">不動産相場</span>の<br>
@@ -176,14 +180,14 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
         </div>
       </div>
     </div>
-    <picture class="p-service-detail__trouble-solution">
+    <picture class="p-service-detail__dialog">
       <source srcset="<?php echo $img_path; ?>service/tateteku/trouble-solution.avif" type="image/avif">
       <source srcset="<?php echo $img_path; ?>service/tateteku/trouble-solution.webp" type="image/webp">
       <img src="<?php echo $img_path; ?>service/tateteku/trouble-solution.webp" alt="" width="" height=""
         loading="lazy">
     </picture>
   </section>
-  <section class="p-service-detail__section p-service-detail__trouble">
+  <section class="p-service-detail__section p-service-detail__trouble p-service-detail__trouble--2">
     <div class="p-service-detail__section-inner">
       <h2 class="p-service-detail__section-title center">
         <span class="p-service-detail__section-title-small">ハウスメーカー・工務店の</span><br>
@@ -499,11 +503,8 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
     </picture>
 
     <div class="p-service-detail-cta__content">
-      <p class="p-service-detail-cta__lead">
-        注文建築業界の土地探し顧客案件の成約率向上のことなら、
-      </p>
       <h2 class="p-service-detail-cta__title">
-        業界特化のDXコンサルティングに強い<br>
+        〇〇のことなら、〇〇に強い<br>
         私たちにご相談ください。
       </h2>
 
@@ -518,11 +519,6 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
               </svg>
             </span>
           </span>
-          <picture>
-            <source srcset="<?php echo $img_path; ?>service/tateteku/document.avif" type="image/avif">
-            <source srcset="<?php echo $img_path; ?>service/tateteku/document.webp" type="image/webp">
-            <img src="<?php echo $img_path; ?>service/tateteku/document.webp" alt="" width="" height="" loading="lazy">
-          </picture>
         </a>
 
         <a class="c-btn contact" href="">
@@ -535,11 +531,6 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
               </svg>
             </span>
           </span>
-          <picture>
-            <source srcset="<?php echo $img_path; ?>service/tateteku/contact.avif" type="image/avif">
-            <source srcset="<?php echo $img_path; ?>service/tateteku/contact.webp" type="image/webp">
-            <img src="<?php echo $img_path; ?>service/tateteku/contact.webp" alt="" width="" height="" loading="lazy">
-          </picture>
         </a>
       </div>
     </div>
@@ -553,25 +544,25 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       <div class="p-service-detail__client-rail splide">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
           </ul>
         </div>
@@ -579,25 +570,25 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       <div class="p-service-detail__client-rail splide reverse">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/tateteku/-rail_1.webp" alt="" width=""
+            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
                 height=""></li>
           </ul>
         </div>

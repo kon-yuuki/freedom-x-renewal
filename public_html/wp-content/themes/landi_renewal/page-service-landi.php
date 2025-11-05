@@ -77,16 +77,24 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
   <div class=" splide js-serviceFooterSlider">
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_1.webp" alt="" loading="lazy"></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--bottom">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_1.webp" alt="" loading="lazy">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--2"><img
             src="<?php echo $img_path ?>service/landi/landi-slider_2.webp" alt="" loading="lazy"></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--3"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_3.webp" alt="" loading="lazy"></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--4"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_4.webp" alt="" loading="lazy"></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--5"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_5.webp" alt="" loading="lazy"></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--3 p-top-recruit__gallery--img--bottom">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_3.webp" alt="" loading="lazy">
+        </li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--4 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_4.webp" alt="" loading="lazy">
+        </li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--5 p-top-recruit__gallery--img--bottom">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_5.webp" alt="" loading="lazy">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--6"><img
             src="<?php echo $img_path ?>service/landi/landi-slider_6.webp" alt="" loading="lazy"></li>
       </ul>

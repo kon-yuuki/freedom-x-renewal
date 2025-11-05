@@ -73,7 +73,7 @@ if (is_page() && (
       業界特化のDXコンサルティングに強い<br>
       私たちにご相談ください。</h2>
     <div class="p-landi-footer__btns">
-      <a class="c-btn document" href="">
+      <a class="c-btn document" href="/document/">
         <span class="c-btn__lead">ランディPROがすぐわかる</span>
         <span class="c-btn__inner">
           <span class="c-btn__txt" data-text="資料をダウンロードする"><span class="words">資料をダウンロードする</span></span>
@@ -174,7 +174,7 @@ if (is_page() && (
       私たちにご相談ください。</h2>
     <div class="p-landi-footer__btns">
       <a class="c-btn document" href="">
-        <span class="c-btn__lead">ランディPROがすぐわかる</span>
+        <span class="c-btn__lead">タテテクがすぐわかる</span>
         <span class="c-btn__inner">
           <span class="c-btn__txt" data-text="資料をダウンロードする"><span class="words">資料をダウンロードする</span></span>
           <span class="c-btn__icon">
@@ -205,9 +205,8 @@ if (is_page() && (
       導入率の算出方法:2024年11月1日時点でランディPROを1ID以上ご利用いただいている支店を対象として算出しています。</p>
     <nav class="p-landi-footer__nav">
       <div class="p-landi-footer__nav--main">
-        <a href="" class="c-linelink--hidden"><span class="c-linelink__txt">ランディPROトップ</span></a>
-        <a href="" class="c-linelink--hidden"><span class="c-linelink__txt">機能と効果</span></a>
-        <a href="" class="c-linelink--hidden"><span class="c-linelink__txt">成功事例</span></a>
+        <a href="" class="c-linelink--hidden"><span class="c-linelink__txt">タテテクトップ</span></a>
+        <a href="/casestudy/tag/tateku" class="c-linelink--hidden"><span class="c-linelink__txt">成功事例</span></a>
       </div>
     </nav>
     <picture class="p-landi-footer__kv">

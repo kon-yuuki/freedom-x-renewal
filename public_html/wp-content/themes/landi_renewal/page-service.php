@@ -143,7 +143,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
           </ul>
         </li>
         <li class="p-service-list__item c-col__item">
-          <a href="" class="p-service-list__link c-linelink">
+          <a href="/service/yobikomu" class="p-service-list__link c-linelink">
             <div class="p-service-list__img">
               <div class="img-ov">
                 <img src="<?php echo $img_path ?>service/service_3.webp" alt="">

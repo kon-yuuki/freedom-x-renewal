@@ -112,7 +112,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
                   </a>
                 </div>
                 <div class="l-header__megamenu--item">
-                  <a href="" class="c-linelink--hidden l-header__megamenu--item--link"><span
+                  <a href="/service/yobikomu" class="c-linelink--hidden l-header__megamenu--item--link"><span
                       class="c-linelink__txt">ヨビコム</span></a>
                 </div>
                 <div class="l-header__megamenu--item">
@@ -212,7 +212,8 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
                         class="c-linelink__txt bottom-3">タテテク</span><span
                         class="l-header__drawer--item--child--img"><img
                           src="<?php echo $img_path ?>/common/drawer-tateteku.webp" alt=""></span></a>
-                    <a href="" class="l-header__drawer--item--child--link c-linelink js-accordion-parent-link"><span
+                    <a href="/service/yobikomu"
+                      class="l-header__drawer--item--child--link c-linelink js-accordion-parent-link"><span
                         class="c-linelink__txt bottom-3">ヨビコム</span><span
                         class="l-header__drawer--item--child--img"><img
                           src="<?php echo $img_path ?>/common/drawer-yobikomu.webp" alt=""></span></a>
@@ -261,7 +262,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
                   class="c-linelink__txt">ランディ</span></a>
               <a href="/service/tateteku" class="l-header__drawer--services--item c-linelink"><span
                   class="c-linelink__txt">タテテク</span></a>
-              <a href="" class="l-header__drawer--services--item c-linelink"><span
+              <a href="/service/yobikomu" class="l-header__drawer--services--item c-linelink"><span
                   class="c-linelink__txt">ヨビコム</span></a>
             </div>
             <div class="l-header__drawer--bottom">

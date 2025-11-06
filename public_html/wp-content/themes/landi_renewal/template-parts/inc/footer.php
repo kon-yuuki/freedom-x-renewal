@@ -147,14 +147,20 @@ if (is_page() && (
             src="<?php echo $img_path ?>service/landi/landi-slider_1.webp" alt=""></li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--2"><img
             src="<?php echo $img_path ?>service/landi/landi-slider_2.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--3"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_3.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--4"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_4.webp" alt=""></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--3 p-top-recruit__gallery--img--bottom">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_3.webp" alt="">
+        </li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--4 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_4.webp" alt="">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--5"><img
             src="<?php echo $img_path ?>service/landi/landi-slider_5.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--6"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_6.webp" alt=""></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--6 p-top-recruit__gallery--img--bottom">
+          <img src="<?php echo $img_path ?>service/landi/landi-slider_6.webp" alt="">
+        </li>
       </ul>
     </div>
   </div>
@@ -218,18 +224,97 @@ if (is_page() && (
   <div class=" splide js-serviceFooterSlider">
     <div class="splide__track">
       <ul class="splide__list">
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/tateteku/slider_1.webp" alt="">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_1.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--2"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_2.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--3"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_3.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--4"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_4.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--5"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_5.webp" alt=""></li>
-        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--6"><img
-            src="<?php echo $img_path ?>service/landi/landi-slider_6.webp" alt=""></li>
+            src="<?php echo $img_path ?>service/tateteku/slider_2.webp" alt=""></li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/tateteku/slider_3.webp" alt=""></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/tateteku/slider_4.webp" alt="">
+        </li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/tateteku/slider_5.webp" alt=""></li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/tateteku/slider_6.webp" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php endif;  ?>
+<?php
+// serviceページのyobikomuのページまたは子ページの場合のみ表示
+if (is_page() && (
+  $post->post_parent == get_page_by_path('service/yobikomu')->ID ||
+  is_page('service/yobikomu')
+)) :
+?>
+<div class="p-landi-footer yobikomu">
+  <div class="p-landi-footer__inner">
+    <h2 class="p-landi-footer__ttl">注文建築業界の土地探し顧客案件の成約率向上のことなら、<br>
+      業界特化のDXコンサルティングに強い<br>
+      私たちにご相談ください。</h2>
+    <div class="p-landi-footer__btns">
+      <a class="c-btn document" href="">
+        <span class="c-btn__lead">タテテクがすぐわかる</span>
+        <span class="c-btn__inner">
+          <span class="c-btn__txt" data-text="資料をダウンロードする"><span class="words">資料をダウンロードする</span></span>
+          <span class="c-btn__icon">
+            <svg class="c-btn__svg">
+              <use href="#i-arw-r"></use>
+            </svg>
+          </span>
+        </span>
+      </a>
+      <a class="c-btn contact" href="">
+        <span class="c-btn__lead">まずは無料で</span>
+        <span class="c-btn__inner">
+          <span class="c-btn__txt" data-text="お問い合わせする"><span class="words">お問い合わせする</span></span>
+          <span class="c-btn__icon">
+            <svg class="c-btn__svg">
+              <use href="#i-arw-r"></use>
+            </svg>
+          </span>
+        </span>
+      </a>
+    </div>
+    <nav class="p-landi-footer__nav">
+      <div class="p-landi-footer__nav--main">
+        <a href="/service/yobikomu" class="c-linelink--hidden"><span class="c-linelink__txt">ヨビコムトップ</span></a>
+        <a href="/casestudy/tag/yobikomu" class="c-linelink--hidden"><span class="c-linelink__txt">成功事例</span></a>
+      </div>
+    </nav>
+    <picture class="p-landi-footer__kv">
+      <source srcset="<?php echo $img_path; ?>service/yobikomu/yobikomu-footer.avif" type="image/avif">
+      <source srcset="<?php echo $img_path; ?>service/yobikomu/yobikomu-footer.webp" type="image/webp">
+      <img src="<?php echo $img_path; ?>service/yobikomu/yobikomu-footer.webp" alt="" width="" height="">
+    </picture>
+  </div>
+  <div class=" splide js-serviceFooterSlider">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_1.webp" alt="">
+        </li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_2.webp" alt=""></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_3.webp" alt="">
+        </li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_4.webp" alt=""></li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_5.webp" alt=""></li>
+        <li
+          class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
+          <img src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_6.webp" alt=""></li>
+        <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
+            src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_7.webp" alt=""></li>
       </ul>
     </div>
   </div>

@@ -951,3 +951,46 @@
   border-top: 1px solid rgba(black, 0.1);
   width: calc(100% - 9.2rem);
 }
+
+
+  .p-service-detail__possible-item {
+    --gap: 4rem;
+    counter-increment: num;
+    box-sizing: border-box;
+    padding-top: 6rem;
+    border-top: 1px solid rgba(g.$c-blue__deep, 0.3);
+    margin-top: 10rem;
+
+    &:first-child {
+      margin-top: 8rem;
+    }
+  }
+
+  .p-service-detail__possible-item-ttl {
+    position: relative;
+    padding-top: 4rem;
+    @include g.setLh(1.3);
+    font-size: 2.8rem;
+    font-family: g.$font-bold;
+    margin-bottom: 4rem;
+
+    &:before {
+      content: "0" counter(num);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.6rem;
+      font-family: g.$font-bold;
+      white-space: nowrap;
+      line-height: 1;
+    }
+  }
+
+  .p-service-detail__possible-item-txt {
+    @include g.setLh(1.75);
+    font-size: 1.6rem;
+  }
+
+  .p-service-detail__possible {
+    margin-bottom: 9rem;
+  }

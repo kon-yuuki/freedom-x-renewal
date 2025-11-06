@@ -122,92 +122,137 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       <img src="<?php echo $img_path ?>service/yobikomu/intro-dialog.webp" alt="" width="" height="" loading="lazy">
     </picture>
   </section>
-  <section class="p-service-detail__section p-service-detail__trouble p-service-detail__trouble--2">
+  <section class="p-service-detail__section p-service-detail__comparison">
     <div class="p-service-detail__section-inner">
       <h2 class="p-service-detail__section-title center">
-        <span class="p-service-detail__section-title-small">ハウスメーカー・工務店の</span><br>
-        <span class="p-service-detail__section-title-large">よくある<strong class="u-txt-red">
-            3つのお悩み</strong></span>
+        <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
+        <span class="p-service-detail__section-title-large">他社との比較</span>
       </h2>
 
-      <picture class="p-service-detail__trouble-image">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-person-2.avif" type="image/avif">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-person-2.webp" type="image/webp">
-        <img src="<?php echo $img_path ?>service/yobikomu/trouble-person-2.webp" alt="" width="" height=""
-          loading="lazy">
+      <picture class="p-service-detail__comparison-image">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/comparison.avif" type="image/avif">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/comparison.webp" type="image/webp">
+        <img src="<?php echo $img_path ?>service/yobikomu/comparison.webp" alt="" width="" height="" loading="lazy">
       </picture>
+    </div>
+  </section>
 
-      <div class="p-service-detail__trouble-card-list c-col col3">
-        <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題01</p>
-          <h3 class="p-service-detail__trouble-card-title">
-            人口の減少により<br>
-            他社との<span class="p-service-detail__trouble-card-title-accent">競争が</span><br>
-            <span class="p-service-detail__trouble-card-title-accent">激化</span>している...
-          </h3>
-          <p class="p-service-detail__trouble-card-text">
-            1社あたりの着客数が減少し、<br>
-            宿社とのシェア獲得競争が<br>
-            激化している
-          </p>
-          <picture class="p-service-detail__trouble-card-image">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-01.avif" type="image/avif">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-01.webp" type="image/webp">
-            <img src="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-01.webp" alt="" width="" height=""
+  <section class="p-service-detail__section p-service-detail__feature">
+    <div class="p-service-detail__section-inner">
+      <h2 class="p-service-detail__section-title center">
+        <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
+        <span class="p-service-detail__section-title-large">他社との比較</span>
+      </h2>
+      <div class="c-col col3">
+        <div class="c-col__item">
+          <picture class="p-service-detail__feature-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_1.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_1.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/feature_1.webp" alt="60秒以内の迅速対応" width="" height=""
               loading="lazy">
           </picture>
         </div>
-
-        <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題02</p>
-          <h3 class="p-service-detail__trouble-card-title">
-            住宅展示場の<br>
-            来場者数が<span class="p-service-detail__trouble-card-title-accent">減少</span>し、<br>
-            <span class="p-service-detail__trouble-card-title-accent">出展費用</span>も<span
-              class="p-service-detail__trouble-card-title-accent">高騰</span>している...
-          </h3>
-          <p class="p-service-detail__trouble-card-text">
-            展示場の出展費用は土地代や人件費・<br>
-            建築コストの上昇で高騰しているが、<br>
-            来場者数はSNSやWEBの普及により減少。<br>
-            そのため費用対効果が悪化している。
-          </p>
-          <picture class="p-service-detail__trouble-card-image">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-02.avif" type="image/avif">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-02.webp" type="image/webp">
-            <img src="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-02.webp" alt="" width="" height=""
+        <div class="c-col__item">
+          <picture class="p-service-detail__feature-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_2.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_2.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/feature_2.webp" alt="完全成果報酬型でリスクゼロ" width="" height=""
               loading="lazy">
           </picture>
         </div>
-
-        <div class="p-service-detail__trouble-card c-col__item">
-          <p class="p-service-detail__trouble-card-label">問題03</p>
-          <h3 class="p-service-detail__trouble-card-title">
-            自社分譲地の仕入れは<br>
-            <span class="p-service-detail__trouble-card-title-accent">不動産相場</span>の<br>
-            <span class="p-service-detail__trouble-card-title-accent">下落リスク</span>が高い...
-          </h3>
-          <p class="p-service-detail__trouble-card-text">
-            金利の高止まりや不透明なあと不動産相場の<br>
-            下落リスクが高まっており、多額の初期費用や<br>
-            先行投資が必要な自社分譲地の仕入れに躊躇を<br>
-            抱えるのには不安を感じている。
-          </p>
-          <picture class="p-service-detail__trouble-card-image">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-03.avif" type="image/avif">
-            <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-03.webp" type="image/webp">
-            <img src="<?php echo $img_path ?>service/yobikomu/trouble-card-problem-2-03.webp" alt="" width="" height=""
+        <div class="c-col__item">
+          <picture class="p-service-detail__feature-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_3.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_3.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/feature_3.webp" alt="休眠リストの掘り起こし対応" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__feature-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_4.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_4.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/feature_4.webp" alt="AI分析による継続改善" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__feature-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_5.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/feature_5.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/feature_5.webp" alt="厳選された熟練オペレーター" width="" height=""
               loading="lazy">
           </picture>
         </div>
       </div>
+      <picture class="p-service-detail__feature-dialog p-service-detail__dialog">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/feature-dialog.avif" type="image/avif">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/feature-dialog.webp" type="image/webp">
+        <img src="<?php echo $img_path ?>service/yobikomu/feature-dialog.webp" alt="" width="" height="" loading="lazy">
+      </picture>
     </div>
-    <picture class="p-service-detail__trouble-solution">
-      <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-solution-2.avif" type="image/avif">
-      <source srcset="<?php echo $img_path ?>service/yobikomu/trouble-solution-2.webp" type="image/webp">
-      <img src="<?php echo $img_path ?>service/yobikomu/trouble-solution-2.webp" alt="" width="" height=""
-        loading="lazy">
-    </picture>
+  </section>
+
+  <section class="p-service-detail__section p-service-detail__task">
+    <div class="p-service-detail__section-inner">
+      <h2 class="p-service-detail__section-title center">
+        <span class="p-service-detail__section-title-small">ハウスメーカーや工務店が抱える</span><br>
+        <span class="p-service-detail__section-title-large">来場までの課題</span>
+      </h2>
+      <picture class="p-service-detail__task-image">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/task-image.avif" type="image/avif">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/task-image.webp" type="image/webp">
+        <img src="<?php echo $img_path ?>service/yobikomu/task-image.webp" alt="60秒以内の迅速対応" width="" height=""
+          loading="lazy">
+      </picture>
+      <div class="c-col col3">
+        <div class="c-col__item">
+          <picture class="p-service-detail__task-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_1.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_1.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/task_1.webp" alt="60秒以内の迅速対応" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__task-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_2.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_2.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/task_2.webp" alt="完全成果報酬型でリスクゼロ" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__task-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_3.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_3.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/task_3.webp" alt="休眠リストの掘り起こし対応" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__task-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_4.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_4.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/task_4.webp" alt="AI分析による継続改善" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+        <div class="c-col__item">
+          <picture class="p-service-detail__task-image">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_5.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/task_5.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/task_5.webp" alt="厳選された熟練オペレーター" width="" height=""
+              loading="lazy">
+          </picture>
+        </div>
+      </div>
+      <picture class="p-service-detail__task-dialog p-service-detail__dialog">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/task-dialog.avif" type="image/avif">
+        <source srcset="<?php echo $img_path ?>service/yobikomu/task-dialog.webp" type="image/webp">
+        <img src="<?php echo $img_path ?>service/yobikomu/task-dialog.webp" alt="" width="" height="" loading="lazy">
+      </picture>
+    </div>
   </section>
 
 
@@ -218,19 +263,17 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       <div class="p-service-detail__intro-wrap">
         <div class="p-service-detail__intro-hero">
           <h2 class="p-service-detail__intro-hero-title">
-            『候補地確定』『資金計画合意』の課題を解決し、<br>
-            成約率を最大4倍にするために開発されたのが<br>
-            営業支援ツール
-            <img class="p-service-detail__intro-hero-logo"
-              src="<?php echo $img_path ?>service/yobikomu/i-tateteku-logo--red.webp" alt="ランディPRO" width="180"
-              height="40">
+            「ヨビコム」は業界平均単価15万円/1組の来場を<br>
+            3万円で獲得できる集客支援サービス。<br>
+            アポ単価を下げながら、<br>
+            来場者数の最大化を実現します
           </h2>
 
           <div class="p-service-detail__intro-hero-device">
             <picture class="p-service-detail__intro-hero-device-main">
               <source srcset="<?php echo $img_path ?>service/yobikomu/intro-device-main.avif" type="image/avif">
               <source srcset="<?php echo $img_path ?>service/yobikomu/intro-device-main.webp" type="image/webp">
-              <img src="<?php echo $img_path ?>service/yobikomu/intro-device-main.webp" alt="ランディPROの画面イメージ" width=""
+              <img src="<?php echo $img_path ?>service/yobikomu/intro-device-main.webp" alt="ヨビコムの画面イメージ" width=""
                 height="" loading="lazy">
             </picture>
 
@@ -280,12 +323,27 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 
         </div>
 
-        <div class="p-service-detail__intro-merit c-grid-inner">
+        <div class="p-service-detail__intro c-grid-inner p-service-yobikomu__intro">
           <div class="p-service-detail__intro-merit-inner">
             <h3 class="p-service-detail__intro-merit-title">
-              ランディPROなら<br>
-              <strong class="u-txt-green-bright">資金計画・候補地確定をDX化</strong>し、土地探し顧客案件の成約率向上が実現できます。
+              ヨビコムとは、<br>
+              業界平均の1組来場単価15万を<br>
+              <strong class="u-txt-green-bright">3万円で獲得できる</strong>集客支援サービスです
             </h3>
+            <picture class="p-service-detail__intro-hero-device-step">
+              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-step.avif" type="image/avif">
+              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-step.webp" type="image/webp">
+              <img src="<?php echo $img_path ?>service/yobikomu/intro-step.webp"
+                alt="オペレーターがお客様へ連絡を取りアポイントを取得した後、貴社担当者へアポイント取得の報告を行います。" width="" height="" loading="lazy">
+            </picture>
+            <p class="p-service-yobikomu__intro-txt">問い合わせ対応にかかる営業担当者の工数や人権費の削減、<br>
+              およびアポイント数の最大化が実現できます。</p>
+            <picture class="p-service-detail__intro-hero-device-step">
+              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-point.avif" type="image/avif">
+              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-point.webp" type="image/webp">
+              <img src="<?php echo $img_path ?>service/yobikomu/intro-point.webp" alt="問い合わせ即アポサービス、休眠リスト架電サービス"
+                width="" height="" loading="lazy">
+            </picture>
             <div class="p-service-detail__intro-hero-buttons">
               <a class="c-btn document white" href="">
                 <span class="c-btn__lead">すぐに読める!</span>
@@ -318,26 +376,6 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
   </div>
 
   <div class="c-grid-inner">
-    <section class="c-section p-service-detail__plan">
-      <div class="c-ttl__wrapper">
-        <h2 class="c-ttl__h2 c-sp-section-separate">ヨビコムはたった30秒でプラン作成が可能です
-        </h2>
-      </div>
-      <p class="c-txt">複雑な現地調査や測量作業は不要。土地の基本情報を入力するだけで、お客様の目の前で魅力的なプランを複数提示。
-        従来の手法では時間のかかるプラン作成が、わずか30秒で完了します。また、条件や外観のテイスト変更で何度でも
-        再作成でき、作成したプランをダウンロードすぐにその場で提案することが可能になります。
-      </p>
-      <picture class="p-service-detail__plan-main-image">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/plan_main.avif" type="image/avif">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/plan_main.webp" type="image/webp">
-        <img src="<?php echo $img_path ?>service/yobikomu/plan_main.webp" alt="" width="" height="" loading="lazy">
-      </picture>
-      <picture class="p-service-detail__plan-other-image">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/plan_other.avif" type="image/avif">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/plan_other.webp" type="image/webp">
-        <img src="<?php echo $img_path ?>service/yobikomu/plan_other.webp" alt="" width="" height="" loading="lazy">
-      </picture>
-    </section>
     <section class="c-section p-service-detail__possible">
       <div class="c-ttl__wrapper">
         <h2 class="c-ttl__h2 c-sp-section-separate">ヨビコムの導入で実現できること
@@ -418,9 +456,9 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       </div>
       <div class="p-service-detail__btn-wrapper">
         <?php get_template_part('/component/btn', null, [
-            'url'   => '/service',
-            'label' => 'ヨビコムの特徴を見る',
-          ]);  ?>
+          'url'   => '/service',
+          'label' => 'ヨビコムの特徴を見る',
+        ]);  ?>
       </div>
     </section>
   </div>
@@ -441,7 +479,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 
       <div class="p-service-detail-cta__buttons">
         <a class="c-btn document" href="">
-          <span class="c-btn__lead">ランディPROがすぐわかる</span>
+          <span class="c-btn__lead">ヨビコムがすぐわかる</span>
           <span class="c-btn__inner">
             <span class="c-btn__txt" data-text="資料をダウンロード"><span class="words">資料をダウンロード</span></span>
             <span class="c-btn__icon">
@@ -540,58 +578,58 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
           </span></a>
       </div>
       <?php
-        // casestudy_tagタクソノミーで「landi」タグが付いたcase_study投稿の最新4件を取得
-        $tateteku_case_study_query = new WP_Query(array(
-          'post_type'      => 'case_study',
-          'posts_per_page' => 4,
-          'post_status'    => 'publish',
-          'orderby'        => 'date',
-          'order'          => 'DESC',
-          'tax_query'      => array(
-            array(
-              'taxonomy' => 'casestudy_tag',
-              'field'    => 'slug',
-              'terms'    => 'tateteku',
-            ),
+      // casestudy_tagタクソノミーで「landi」タグが付いたcase_study投稿の最新4件を取得
+      $tateteku_case_study_query = new WP_Query(array(
+        'post_type'      => 'case_study',
+        'posts_per_page' => 4,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'tax_query'      => array(
+          array(
+            'taxonomy' => 'casestudy_tag',
+            'field'    => 'slug',
+            'terms'    => 'tateteku',
           ),
-        ));
-        ?>
+        ),
+      ));
+      ?>
 
       <ul class="p-top-casestudy__latest--list c-col col4">
         <?php if ($tateteku_case_study_query->have_posts()) : ?>
         <?php while ($tateteku_case_study_query->have_posts()) : $tateteku_case_study_query->the_post(); ?>
         <?php
-              $post_id = get_the_ID();
-              $title = get_the_title();
-              $post_link = get_permalink();
-              $client = get_field('case_company', $post_id);
-              
-              // カテゴリー情報（taxonomy_case_study）を取得
-              $categories = get_the_terms($post_id, 'taxonomy_case_study');
-              $category_name = '';
-              $category_url = '';
-              if (!empty($categories) && !is_wp_error($categories)) {
-                $category = $categories[0];
-                $category_name = $category->name;
-                $category_url = get_term_link($category);
-              }
-              
-              // タグ情報（casestudy_tag）を取得
-              $tags = get_the_terms($post_id, 'casestudy_tag');
-              
-              // 画像を取得
-              $thumbnail_url = '';
-              if (has_post_thumbnail($post_id)) {
-                $thumbnail_url = get_the_post_thumbnail_url($post_id, 'medium');
+            $post_id = get_the_ID();
+            $title = get_the_title();
+            $post_link = get_permalink();
+            $client = get_field('case_company', $post_id);
+
+            // カテゴリー情報（taxonomy_case_study）を取得
+            $categories = get_the_terms($post_id, 'taxonomy_case_study');
+            $category_name = '';
+            $category_url = '';
+            if (!empty($categories) && !is_wp_error($categories)) {
+              $category = $categories[0];
+              $category_name = $category->name;
+              $category_url = get_term_link($category);
+            }
+
+            // タグ情報（casestudy_tag）を取得
+            $tags = get_the_terms($post_id, 'casestudy_tag');
+
+            // 画像を取得
+            $thumbnail_url = '';
+            if (has_post_thumbnail($post_id)) {
+              $thumbnail_url = get_the_post_thumbnail_url($post_id, 'medium');
+            } else {
+              $case_main_img = get_field('case_main_img', $post_id);
+              if ($case_main_img && !empty($case_main_img)) {
+                $thumbnail_url = $case_main_img;
               } else {
-                $case_main_img = get_field('case_main_img', $post_id);
-                if ($case_main_img && !empty($case_main_img)) {
-                  $thumbnail_url = $case_main_img;
-                } else {
-                  $thumbnail_url = $img_path . 'top/casestudy_thumb.webp';
-                }
+                $thumbnail_url = $img_path . 'top/casestudy_thumb.webp';
               }
-              ?>
+            }
+            ?>
         <li class="c-col__item p-feature-casestudy__item">
           <div class="p-top-casestudy__latest--inner c-card c-linelink">
             <a href="<?php echo esc_url($post_link); ?>" class="c-card-mainLink"><span
@@ -633,7 +671,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
         <li class="c-col__item p-feature-casestudy__item">
           <div class="p-top-casestudy__latest--inner c-card">
             <div class="c-card-body">
-              <p>現在、ランディPROの事例がありません。</p>
+              <p>現在、ヨビコムの事例がありません。</p>
             </div>
           </div>
         </li>
@@ -649,7 +687,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
       <div class="p-service-detail__contact-content">
         <div class="p-service-detail__contact-info">
           <p class="p-service-detail__contact-info-text">
-            ランディPROご利用開始までの流れは<br>
+            ヨビコムご利用開始までの流れは<br>
             下記の通りです。
           </p>
 

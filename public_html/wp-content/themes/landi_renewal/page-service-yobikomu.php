@@ -5,7 +5,7 @@ Template Name:ヨビコム
 global $util;
 $pageinfo = array(
   'page_id' => 'case',
-  'navigation' => 'service renewal yobikomu',
+  'navigation' => 'service renewal yobikomu service-detail',
   'title' => '建築・不動産領域におけるDXコンサルティング｜FREEDOM X株式会社',
   'description' => 'FreedomXは、建築・不動産領域の知的生産性に革命をもたらします。当社は、実績に裏付けされた知見とテクノロジーの力で人材の能力を底上げし、経験が浅い人でも無駄なく最短で正解に辿り着ける未来を目指します。'
 );
@@ -18,36 +18,10 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 
 
 <section class="p-service-detail__fv">
-  <div class="p-service-detail__client-rail splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-        <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-            height="" loading="lazy"></li>
-      </ul>
-    </div>
-  </div>
   <div class="p-service-detail__fv-inner">
     <div class="p-service-detail__fv-heading">
-      <h2 class="p-service-detail__fv-title"><strong>成約率</strong>を最大4倍にする<br>注文建築業界専門<br>営業支援DXツール「ヨビコム」
-      </h2>
+      <h1 class="p-service-detail__fv-title"><strong>成約率</strong>を最大4倍にする<br>注文建築業界専門<br>営業支援DXツール「ヨビコム」
+      </h1>
     </div>
     <p class="p-service-detail__fv-text">土地探し顧客への「資金計画合意」・「候補地確定」の課題をDXで効率化。<br>
       ITリテラシーに関係なく、誰でも簡単に接客・追客できる多数の機能で、確実に成約へ導きます。
@@ -100,22 +74,21 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 </section>
 
 <main class="p-service-detail p-service-yobikomu">
-  <section class="p-service-detail__section p-service-yobikomu__intro">
-    <div class="p-service-detail__section-inner">
-      <h2 class="p-service-detail__section-title center">
-        <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
-        <span class="p-service-detail__section-title-large">「ヨビコム」は
-          業界平均15万円の商談アポイントを3万円で獲得する<br>
-          住宅業界専門の来場確定サービスです。</span>
-      </h2>
+  <section class="p-service-detail__section p-service-yobikomu__first section-clip section-dot-separate">
+    <h2 class="p-service-detail__section-title center">
+      <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
+      <span class="p-service-detail__section-title-large">「ヨビコム」は<br>
+        業界平均15万円の商談アポイントを3万円で獲得する<br>
+        住宅業界専門の来場確定サービスです。</span>
+    </h2>
 
-      <picture class="p-service-yobikomu__intro-image">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/intro-kv.avif" type="image/avif">
-        <source srcset="<?php echo $img_path ?>service/yobikomu/intro-kv.webp" type="image/webp">
-        <img src="<?php echo $img_path ?>service/yobikomu/intro-kv.webp" alt="" width="" height="" loading="lazy">
-      </picture>
+    <picture class="p-service-yobikomu__first-image">
+      <source srcset="<?php echo $img_path ?>service/yobikomu/intro-kv.avif" type="image/avif">
+      <source srcset="<?php echo $img_path ?>service/yobikomu/intro-kv.webp" type="image/webp">
+      <img src="<?php echo $img_path ?>service/yobikomu/intro-kv.webp" alt="" width="" height="" loading="lazy">
+    </picture>
 
-    </div>
+
     <picture class="p-service-detail__dialog">
       <source srcset="<?php echo $img_path ?>service/yobikomu/intro-dialog.avif" type="image/avif">
       <source srcset="<?php echo $img_path ?>service/yobikomu/intro-dialog.webp" type="image/webp">
@@ -123,7 +96,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
     </picture>
   </section>
   <section class="p-service-detail__section p-service-detail__comparison">
-    <div class="p-service-detail__section-inner">
+    <div class="c-grid-inner">
       <h2 class="p-service-detail__section-title center">
         <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
         <span class="p-service-detail__section-title-large">他社との比較</span>
@@ -135,13 +108,14 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
         <img src="<?php echo $img_path ?>service/yobikomu/comparison.webp" alt="" width="" height="" loading="lazy">
       </picture>
     </div>
+
   </section>
 
-  <section class="p-service-detail__section p-service-detail__feature">
+  <section class="p-service-detail__section p-service-yobikomu__feature  section-clip section-dot-separate">
     <div class="p-service-detail__section-inner">
       <h2 class="p-service-detail__section-title center">
-        <span class="p-service-detail__section-title-small">テレアポ代行サービス</span><br>
-        <span class="p-service-detail__section-title-large">他社との比較</span>
+        <span class="p-service-detail__section-title-small">分析からわかった</span><br>
+        <span class="p-service-detail__section-title-large">ヨビコムの特徴</span>
       </h2>
       <div class="c-col col3">
         <div class="c-col__item">
@@ -193,13 +167,13 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
     </div>
   </section>
 
-  <section class="p-service-detail__section p-service-detail__task">
-    <div class="p-service-detail__section-inner">
+  <section class="p-service-detail__section p-service-detail__task section-clip section-dot-separate">
+    <div class="p-service-detail__section-inner bg-bottom">
       <h2 class="p-service-detail__section-title center">
         <span class="p-service-detail__section-title-small">ハウスメーカーや工務店が抱える</span><br>
         <span class="p-service-detail__section-title-large">来場までの課題</span>
       </h2>
-      <picture class="p-service-detail__task-image">
+      <picture class="p-service-detail__task-illust">
         <source srcset="<?php echo $img_path ?>service/yobikomu/task-image.avif" type="image/avif">
         <source srcset="<?php echo $img_path ?>service/yobikomu/task-image.webp" type="image/webp">
         <img src="<?php echo $img_path ?>service/yobikomu/task-image.webp" alt="60秒以内の迅速対応" width="" height=""
@@ -262,6 +236,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
     <section class="p-service-detail__section p-service-detail__intro">
       <div class="p-service-detail__intro-wrap">
         <div class="p-service-detail__intro-hero">
+          <p class="p-service-detail__intro-hero-txt">そのような背景から、</p>
           <h2 class="p-service-detail__intro-hero-title">
             「ヨビコム」は業界平均単価15万円/1組の来場を<br>
             3万円で獲得できる集客支援サービス。<br>
@@ -338,12 +313,29 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
             </picture>
             <p class="p-service-yobikomu__intro-txt">問い合わせ対応にかかる営業担当者の工数や人権費の削減、<br>
               およびアポイント数の最大化が実現できます。</p>
-            <picture class="p-service-detail__intro-hero-device-step">
-              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-point.avif" type="image/avif">
-              <source srcset="<?php echo $img_path ?>service/yobikomu/intro-point.webp" type="image/webp">
-              <img src="<?php echo $img_path ?>service/yobikomu/intro-point.webp" alt="問い合わせ即アポサービス、休眠リスト架電サービス"
-                width="" height="" loading="lazy">
-            </picture>
+            <div class="c-col col2 p-service-yobikomu__intro-service">
+              <div class="c-col__item">
+                <picture class="p-service-detail__intro-illust">
+                  <source srcset="<?php echo $img_path ?>service/yobikomu/intro-service_1.avif" type="image/avif">
+                  <source srcset="<?php echo $img_path ?>service/yobikomu/intro-service_1.webp" type="image/webp">
+                  <img src="<?php echo $img_path ?>service/yobikomu/intro-service_1.webp" alt="" width="" height=""
+                    loading="lazy">
+                </picture>
+                <h4 class="p-service-yobikomu__intro-service-ttl">問い合わせ即アポサービス</h4>
+                <p class="p-service-yobikomu__intro-service-txt">顧客の問い合わせに即時に対応することで、住宅展示場や営業所への集客率アップが目指せます。</p>
+              </div>
+              <div class="c-col__item">
+                <picture class="p-service-detail__intro-illust">
+                  <source srcset="<?php echo $img_path ?>service/yobikomu/intro-service_2.avif" type="image/avif">
+                  <source srcset="<?php echo $img_path ?>service/yobikomu/intro-service_2.webp" type="image/webp">
+                  <img src="<?php echo $img_path ?>service/yobikomu/intro-service_2.webp" alt="" width="" height=""
+                    loading="lazy">
+                </picture>
+                <h4 class="p-service-yobikomu__intro-service-ttl">休眠リスト架電サービス</h4>
+                <p class="p-service-yobikomu__intro-service-txt">過去に問い合わせに対し追客ができていない顧客等に対し、ヨビコムが貴社に代わってフォローアップを行います。
+                </p>
+              </div>
+            </div>
             <div class="p-service-detail__intro-hero-buttons">
               <a class="c-btn document white" href="">
                 <span class="c-btn__lead">すぐに読める!</span>
@@ -506,64 +498,36 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
   </section>
 
   <div class="c-grid-inner">
-    <section class="p-service-detail__section p-service-detail__client">
-      <h2 class="p-service-detail__section-title large center"><strong class="c-red">
-          <strong class="u-txt-red">大手ハウスメーカー16社の100％が導入中</strong><br>
-        </strong>500社以上から支持されています。</h2>
-      <div class="p-service-detail__client-rail splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-          </ul>
+
+    <section class="p-feature-casestudy c-section p-service-yobikomu__support">
+      <div class="c-ttl__wrapper">
+        <h2 class="c-ttl__h2 c-sp-section-separate">全国10箇所に営業拠点を配置しているから、<br>
+          導入後のサポートも充実しています。
+        </h2>
+      </div>
+      <div class="p-service-yobikomu__support-main">
+        <div class="p-service-yobikomu__support-image">
+          <picture class="p-service-detail-cta__image" aria-hidden="true" data-parallax-start="top bottom">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/support_1.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/support_1.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/support_1.webp" alt="" width="" height="" loading="lazy">
+          </picture>
+        </div>
+        <div class="p-service-yobikomu__support-image">
+          <picture class="p-service-detail-cta__image" aria-hidden="true" data-parallax-start="top bottom">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/support_2.avif" type="image/avif">
+            <source srcset="<?php echo $img_path ?>service/yobikomu/support_2.webp" type="image/webp">
+            <img src="<?php echo $img_path ?>service/yobikomu/support_2.webp" alt="" width="" height="" loading="lazy">
+          </picture>
+        </div>
+        <div class="p-service-yobikomu__support-content">
+          <p class="p-service-yobikomu__support-txt">
+            ツール導入後の現場活用に不安を抱えている方でもご安心ください。<br>ヨビコムは研修サポートや毎月の定例会を通じて、ツール運用を継続的にサポートしてまいります。</p>
         </div>
       </div>
-      <div class="p-service-detail__client-rail splide reverse">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-            <li class="splide__slide"><img src="<?php echo $img_path ?>service/landi/landi-rail_1.webp" alt="" width=""
-                height=""></li>
-          </ul>
-        </div>
-      </div>
+
     </section>
-    <section class="p-feature-casestudy c-section">
+    <section class="c-section">
       <div class="c-ttl__wrapper">
         <h2 class="c-ttl__h2 c-sp-section-separate">解決してきた課題<span class="sp-hidden">（事例紹介）</span>
         </h2>

@@ -187,7 +187,7 @@
 }
 .p-service-detail__section-title-small {
   font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .6rem;
   font-family: g.$font-bold;
   display: inline-block;
 }
@@ -238,6 +238,14 @@
       black 80%,
       transparent 100%
     );
+  }
+
+  &.bg-bottom{
+    &:before{
+      top:auto;
+      bottom:0;
+      height: 40rem;
+    }
   }
 }
 
@@ -550,9 +558,15 @@
 
 .p-service-detail__intro {
   text-align: center;
-  padding-top: 22rem;
+  padding-top: 24rem;
   margin-top: -10rem;
   color: white;
+}
+
+.p-service-detail__intro-hero-txt{
+  font-size: 1.6rem;
+  font-family: g.$font-bold;
+  margin-bottom: 2rem;
 }
 
 .p-service-detail__intro-hero-title {
@@ -993,4 +1007,10 @@
 
   .p-service-detail__possible {
     margin-bottom: 9rem;
+  }
+
+  @media(max-width:1023px){
+    .service-detail{
+      
+    }
   }

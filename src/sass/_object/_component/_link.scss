@@ -305,6 +305,21 @@ button {
       border-color: transparent;
     }
   }
+  
+  .service-detail &{
+    &.contact{
+      --hov-bg-color: #{g.$c-green__light};
+      --hov-border-color: #{g.$c-green__light};
+      --hov-color: white;
+      color: white;
+      background-color:var(--primary-color);
+      border-color: g.$c-red;
+    
+      .to-bg-blue & {
+        border-color: transparent;
+      }
+    }
+  }
 
   .words {
     display: block;
@@ -457,6 +472,11 @@ button {
       .c-btn__inner {
         justify-content: center;
       }
+    }
+
+    .c-btn__lead{
+      font-size: .8rem;
+      margin-bottom: 0.4rem;
     }
   }
   .c-btn__icon {

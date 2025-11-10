@@ -1,1 +1,153 @@
 @use "../../_foundation/global" as g;
+
+.yobikomu {
+  --primary-color:#E56A32;
+  .p-service-detail__fv {
+    padding-top: calc(var(--header-height) + 1.5rem);
+  }
+
+  .p-service-detail__fv-inner {
+    height: 100%;
+  }
+
+  .p-service-detail__intro-hero-device-main{
+    width: g.vwPc(628);
+  }
+
+  .p-service-detail__intro-merit-title{
+    padding-top: 0;
+    border:none;
+  }
+}
+
+.p-service-yobikomu__first {
+  padding-top: 26.5rem;
+  padding-bottom: 8rem;
+
+  .p-service-detail__section-title {
+    margin-bottom: 8rem;
+  }
+}
+
+.p-service-yobikomu__first-image {
+  padding-inline: 3rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  margin-bottom: 7rem;
+}
+
+.p-service-detail__comparison{
+  padding-top: 9.5rem;
+
+  .p-service-detail__section-title{
+    margin-bottom: .4rem;
+  }
+}
+
+.p-service-detail__comparison{
+  margin-bottom: 10rem;
+}
+
+.p-service-yobikomu__feature{
+  padding-bottom: 9rem;
+  .c-col{
+    --gap:1rem;
+    justify-content: center;
+    row-gap:3.5rem;
+    margin-bottom: 10rem;
+  }
+  .p-service-detail__section-inner{
+    &:before{
+      display: none;
+    }
+  }
+}
+
+.p-service-detail__task{
+  padding-top: 19rem;
+  padding-bottom: 10rem;
+  z-index: 10;
+  background-color: white;
+
+  &:before{
+    height: 80%;
+  }
+
+  .p-service-detail__section-title{
+    margin-bottom: 0rem;
+  }
+
+  .c-col{
+    --gap:1rem;
+    justify-content: center;
+    row-gap:3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.p-service-detail__task-illust{
+  display: block;
+  width: 12.3rem;
+  margin-inline: auto;
+}
+
+.p-service-yobikomu__intro{
+  padding-top: 6rem;
+
+  .p-service-detail__intro-hero-device-step{
+    width: 91rem;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 10rem;
+  }
+  .p-service-detail__intro-merit-title{
+    margin-bottom: 4rem;
+  }
+  .p-service-yobikomu__intro-txt{
+    font-size: 2.2rem;
+    @include g.setLh(1.5);
+    margin-bottom: 5rem;
+  }
+}
+
+.p-service-yobikomu__intro-service{
+  --gap: 2rem;
+  width: 52rem;
+  margin-inline: auto;
+  margin-bottom: 8rem;
+}
+
+.p-service-yobikomu__intro-service-ttl{
+  font-size:1.6rem;
+  padding-top: 3rem;
+  border-top:1px solid rgba(white,.2);
+  font-family: g.$font-bold;
+  margin-bottom: 1.5rem;
+}
+
+.p-service-yobikomu__intro-service-txt{
+  font-size: 1.4rem;
+  @include g.setLh(1.4);
+}
+
+.p-service-yobikomu__support-main{
+  display: flex;
+}
+
+.p-service-yobikomu__support-content{
+  width: 24.5rem;
+  margin-left: 6rem;
+  font-size: 1.6rem;
+  @include g.setLh(1.5);
+}
+
+.p-service-yobikomu__support-image{
+  width: calc((100% - 24.5rem - 2.5rem - 6rem) / 2);
+  border-radius: 15px;
+  overflow: clip;
+
+  &:nth-of-type(1){
+    margin-right: 2.5rem;
+  }
+}

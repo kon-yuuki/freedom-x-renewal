@@ -1,6 +1,7 @@
 @use "../../_foundation/global" as g;
 
 .tateteku {
+  --primary-color:#46A26F;
   .p-service-detail__trouble-solution {
     bottom: 12rem;
   }
@@ -88,6 +89,9 @@
     translate: -1.5rem -0.2rem;
   }
 
+  .p-service-detail__intro-hero-device-main{
+    width: g.vwPc(808);
+  }
 
   .p-service-detail__intro-merit-title {
     padding-top: 0;

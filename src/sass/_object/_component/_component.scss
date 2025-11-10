@@ -272,13 +272,13 @@ a.pc-hidden {
 }
 
 .c-anchor {
-  border: 1px solid rgba(white, 0.2);
   border-radius: 10px;
   font-size: 1.8rem;
   padding: 3rem 2.7rem;
-
-  #case &{
-    border-color:rgba(black, 0.1)
+  border: 1px solid rgba(black,.1);
+  
+  &.white{
+    border-color:rgba(white,.2);
   }
 }
 
@@ -290,7 +290,7 @@ a.pc-hidden {
 
 .c-anchor__icon {
   border-radius: 50%;
-  border: 1px solid rgba(white, 0.2);
+  border: 1px solid rgba(black,.1);
   width: 1.2rem;
   aspect-ratio: 1/1;
   display: inline-block;
@@ -298,12 +298,19 @@ a.pc-hidden {
   justify-content: center;
   align-items: center;
   overflow: clip;
+  // padding:.1rem;
+  box-sizing: border-box;
+
+  .white &{
+    border-color:rgba(white,.2);
+  }
 }
 
 .c-anchor__arw {
   display: inline-block;
   max-height: 100%;
   width: 60%;
+  translate:.2px .1px;
 }
 
 .c-anchor__link {

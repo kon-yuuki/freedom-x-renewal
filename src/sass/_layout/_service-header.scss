@@ -1,0 +1,63 @@
+@use "../_foundation/global" as g;
+@use "../_foundation/keyframe" as k;
+@use "../_foundation/mixins" as m;
+
+@media (max-width: 1023px) {
+  .service-detail {
+    .l-header__logo {
+      display: flex;
+      align-items: flex-end;
+      font-size: 1rem;
+      gap: 7px;
+    }
+
+    .l-header__cta--wrapper {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem 1rem 3rem;
+      box-sizing: border-box;
+      border-top: 0.5px solid g.$c-gray__1;
+      background-color: white;
+    }
+
+    .l-header__cta {
+      display: flex;
+      gap: 5px;
+      width: 100%;
+
+      .c-btn {
+        width: calc((100% - 5px) / 2);
+        font-size: 1.4rem;
+        height: 4.5rem;
+        box-sizing: border-box;
+        padding: 0;
+
+        &.document {
+          background-color: #eff2f2;
+        }
+        &.contact {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+
+    .l-header__menu {
+      bottom: auto;
+      top:1rem;
+      right:1.5rem;
+      height: 4rem;
+      border-radius: 5px;
+      
+      &:before{
+        border-radius: 5px;
+        background-color: var(--primary-color);
+      }
+    }
+
+    .l-header__menu--dots{
+      top:1.25rem;
+    }
+  }
+}

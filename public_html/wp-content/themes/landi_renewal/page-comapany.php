@@ -54,7 +54,7 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
 <main class="p-company">
   <div class="c-bg-blue">
     <div class="c-grid-inner">
-      <nav class="c-anchor">
+      <nav class="c-anchor white">
         <ul class="c-anchor__list">
           <li class="c-anchor__item">
             <a href="#philosophy" class="c-linelink c-anchor__link">

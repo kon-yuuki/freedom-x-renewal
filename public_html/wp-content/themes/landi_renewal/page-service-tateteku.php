@@ -5,7 +5,7 @@ Template Name:タテテク
 global $util;
 $pageinfo = array(
   'page_id' => 'case',
-  'navigation' => 'service renewal tateteku',
+  'navigation' => 'service renewal tateteku service-detail',
   'title' => '建築・不動産領域におけるDXコンサルティング｜FREEDOM X株式会社',
   'description' => 'FreedomXは、建築・不動産領域の知的生産性に革命をもたらします。当社は、実績に裏付けされた知見とテクノロジーの力で人材の能力を底上げし、経験が浅い人でも無駄なく最短で正解に辿り着ける未来を目指します。'
 );
@@ -46,10 +46,10 @@ $img_path = get_template_directory_uri() . '/src/renewal/images/';
   </div>
   <div class="p-service-detail__fv-inner">
     <div class="p-service-detail__fv-heading">
-      <h2 class="p-service-detail__fv-title"><strong>成約率</strong>を最大4倍にする<br>注文建築業界専門<br>営業支援DXツール
+      <h1 class="p-service-detail__fv-title"><strong>成約率</strong>を最大4倍にする<br>注文建築業界専門<br>営業支援DXツール
         <img class="p-service-detail__fv-logo" src="<?php echo $img_path ?>service/tatetekui-logo--white.webp"
           alt="タテテク" />
-      </h2>
+      </h1>
     </div>
     <p class="p-service-detail__fv-text">土地探し顧客への「資金計画合意」・「候補地確定」の課題をDXで効率化。<br>
       ITリテラシーに関係なく、誰でも簡単に接客・追客できる多数の機能で、確実に成約へ導きます。

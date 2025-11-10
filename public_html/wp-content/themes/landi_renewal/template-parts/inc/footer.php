@@ -61,11 +61,10 @@ bottom_banner_margin();
 
 
 <?php
+global $post;
+$current_slug = $post->post_name;
 // serviceページのlandiのページまたは子ページの場合のみ表示
-if (is_page() && (
-  $post->post_parent == get_page_by_path('service/landi')->ID ||
-  is_page('service/landi')
-)) :
+if (is_page() && $current_slug === "landi" || $current_slug === "case") :
 ?>
 <div class="p-landi-footer">
   <div class="p-landi-footer__inner">
@@ -168,10 +167,7 @@ if (is_page() && (
 <?php endif;  ?>
 <?php
 // serviceページのtatetekuのページまたは子ページの場合のみ表示
-if (is_page() && (
-  $post->post_parent == get_page_by_path('service/tateteku')->ID ||
-  is_page('service/tateteku')
-)) :
+if (is_page() && $current_slug === "tateteku") :
 ?>
 <div class="p-landi-footer tateteku">
   <div class="p-landi-footer__inner">
@@ -247,10 +243,7 @@ if (is_page() && (
 <?php endif;  ?>
 <?php
 // serviceページのyobikomuのページまたは子ページの場合のみ表示
-if (is_page() && (
-  $post->post_parent == get_page_by_path('service/yobikomu')->ID ||
-  is_page('service/yobikomu')
-)) :
+if (is_page() && $current_slug === "yobikomu") :
 ?>
 <div class="p-landi-footer yobikomu">
   <div class="p-landi-footer__inner">
@@ -312,7 +305,8 @@ if (is_page() && (
             src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_5.webp" alt=""></li>
         <li
           class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1 p-top-recruit__gallery--img--top">
-          <img src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_6.webp" alt=""></li>
+          <img src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_6.webp" alt="">
+        </li>
         <li class="splide__slide p-top-recruit__gallery--img p-top-recruit__gallery--img--1"><img
             src="<?php echo $img_path ?>service/yobikomu/yobikomu-slider_7.webp" alt=""></li>
       </ul>

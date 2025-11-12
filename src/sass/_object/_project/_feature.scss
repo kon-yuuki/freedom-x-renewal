@@ -616,50 +616,7 @@ p.p-feature-service__txt {
         margin-bottom: 0.7rem;
       }
     }
-    .p-feature-casestudy__item {
-      @include g.dotted-line-bottom;
 
-      &:last-child {
-        &:after {
-          display: none;
-        }
-        .p-top-casestudy__latest--inner {
-          padding-bottom: 0;
-        }
-      }
-
-      .p-top-casestudy__client {
-        margin-bottom: 0.5rem;
-        font-size: 1.2rem;
-      }
-      .p-top-casestudy__ttl {
-        margin-bottom: 0.8rem;
-        font-size: 1.2rem;
-      }
-      .c-tag-list {
-        margin-bottom: 0;
-      }
-    }
-    .p-feature-casestudy {
-      padding-bottom: 6rem;
-    }
-    .p-top-casestudy__latest--inner {
-      border: none;
-      padding: 2rem 0 1.9rem;
-      .c-card-body {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 1.5rem;
-        align-items: flex-start;
-      }
-      .img-ov {
-        border-radius: 10px;
-        width: 10rem;
-      }
-      &:before {
-        display: none;
-      }
-    }
   }
   .p-company-group__ttl {
     font-size: 1.4rem;
@@ -821,4 +778,49 @@ p.p-feature-service__txt {
     top: -1rem;
     right: -1rem;
   }
+
+   .p-feature-casestudy__item {
+      @include g.dotted-line-bottom;
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+        .p-top-casestudy__latest--inner {
+          padding-bottom: 0;
+        }
+      }
+
+      .p-top-casestudy__client {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+      }
+      .p-top-casestudy__ttl {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+      }
+      .c-tag-list {
+        margin-bottom: 0;
+      }
+    }
+    .p-feature-casestudy {
+      padding-bottom: 6rem;
+      .p-top-casestudy__latest--inner {
+        border: none;
+        padding: 2rem 0 1.9rem;
+        .c-card-body {
+          display: flex;
+          flex-direction: row-reverse;
+          gap: 1.5rem;
+          align-items: flex-start;
+        }
+        .img-ov {
+          border-radius: 10px;
+          width: 10rem;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
 }

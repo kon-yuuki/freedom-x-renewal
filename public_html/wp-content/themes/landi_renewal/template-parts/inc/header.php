@@ -399,7 +399,7 @@ if($show_landi_use_header):
         <a class="c-btn document" href="/document/">
           <span class="c-btn__lead">ランディPROがすぐわかる</span>
           <span class="c-btn__inner">
-            <span class="c-btn__txt" data-text="資料をダウンロードする"><span class="words">資料をダウンロードする</span></span>
+            <span class="c-btn__txt" data-text="資料ダウンロード"><span class="words">資料ダウンロード</span></span>
             <span class="c-btn__icon">
               <svg class="c-btn__svg">
                 <use href="#i-arw-r"></use>
@@ -407,10 +407,10 @@ if($show_landi_use_header):
             </span>
           </span>
         </a>
-        <a class="c-btn contact" href="/document/">
-          <span class="c-btn__lead">ランディPROがすぐわかる</span>
+        <a class="c-btn contact" href="/contact/">
+          <span class="c-btn__lead">まずは無料で</span>
           <span class="c-btn__inner">
-            <span class="c-btn__txt" data-text="資料をダウンロードする"><span class="words">資料をダウンロードする</span></span>
+            <span class="c-btn__txt" data-text="相談してみる"><span class="words">相談してみる</span></span>
             <span class="c-btn__icon">
               <svg class="c-btn__svg">
                 <use href="#i-arw-r"></use>

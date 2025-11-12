@@ -152,6 +152,7 @@ body {
     &.c-sp-section-separate {
       margin-top: 5.2rem;
       position: relative;
+      display: block;
 
       &:before {
         content: "";

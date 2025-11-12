@@ -945,7 +945,6 @@ a.pc-hidden {
   &[data-parallax-sp="false"] {
     @media (max-width: 1023px) {
       .js-parallax-target {
-        position: relative;
         inset: 0;
         height: 100%;
       }

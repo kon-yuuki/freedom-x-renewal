@@ -129,6 +129,10 @@
 
 @mixin section-clip{
    clip-path:polygon(0% 0%,100% 0%,100% calc(100% - 10rem),50% 100%,0% calc(100% - 10rem));
+   
+   @media(max-width:1023px){
+     clip-path:polygon(0% 0%,100% 0%,100% calc(100% - 4rem),50% 100%,0% calc(100% - 4rem));
+   }
 }
 
 @mixin section-dot-separate{

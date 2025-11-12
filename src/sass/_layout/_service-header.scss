@@ -2,6 +2,18 @@
 @use "../_foundation/keyframe" as k;
 @use "../_foundation/mixins" as m;
 
+  .service-detail{
+     .l-header__cta{
+      .c-btn{
+        &.contact{
+          background-color: var(--primary-color);
+          color:white;
+          border-color:var(--primary-color);
+        }
+      }
+     }
+  }
+
 @media (max-width: 1023px) {
   .service-detail {
     .l-header__logo {
@@ -10,6 +22,8 @@
       font-size: 1rem;
       gap: 7px;
     }
+
+
 
     .l-header__cta--wrapper {
       position: fixed;
@@ -20,6 +34,10 @@
       box-sizing: border-box;
       border-top: 0.5px solid g.$c-gray__1;
       background-color: white;
+
+      .c-btn__icon{
+        display: flex;
+      }
     }
 
     .l-header__cta {

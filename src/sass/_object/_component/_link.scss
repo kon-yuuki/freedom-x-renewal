@@ -305,21 +305,6 @@ button {
       border-color: transparent;
     }
   }
-  
-  .service-detail &{
-    &.contact{
-      --hov-bg-color: #{g.$c-green__light};
-      --hov-border-color: #{g.$c-green__light};
-      --hov-color: white;
-      color: white;
-      background-color:var(--primary-color);
-      border-color: g.$c-red;
-    
-      .to-bg-blue & {
-        border-color: transparent;
-      }
-    }
-  }
 
   .words {
     display: block;
@@ -381,7 +366,7 @@ button {
       width: 5rem;
     }
   }
-  &:has(img){
+  &:has(img) {
     position: relative;
     padding-bottom: 4rem;
     box-sizing: border-box;
@@ -473,10 +458,29 @@ button {
         justify-content: center;
       }
     }
+    &.document {
+      img {
+        width: 5.5rem;
+      }
+    }
+    &.contact {
+      img {
+        width: 2.9rem;
+      }
+    }
 
-    .c-btn__lead{
-      font-size: .8rem;
+    .c-btn__lead {
+      font-size: 0.8rem;
       margin-bottom: 0.4rem;
+    }
+
+    &:has(img) {
+      padding-bottom: 2rem;
+      font-size: 1.6rem;
+      .c-btn__lead {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+      }
     }
   }
   .c-btn__icon {
